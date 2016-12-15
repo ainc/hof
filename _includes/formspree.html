@@ -1,0 +1,17 @@
+<form action="//formspree.io/info@awesomeincu.com" method="POST">
+    <legend>{{page.form_legend}}</legend>
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" class="form-control input-lg">
+    </div>
+    <div class="form-group">
+        <input type="tel" name="phone" placeholder="Phone Number" class="form-control input-lg">
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" placeholder="Email Address" class="form-control input-lg">
+    </div>
+    <div class="form-group">
+    <input type="hidden" name="_subject" value="{{page.title}} interest form submission"  class="form-control input-lg">
+    </div>
+    <input type="hidden" name="_next" value="//www.awesomeincu.com/thanks/">
+    <button type="submit" class="btn btn-default">Submit</button>  
+</form>

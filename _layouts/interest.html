@@ -1,0 +1,33 @@
+---
+layout: page
+---
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron-large" style="background-image: url({{page.hero_img}});">
+  <div class="jumbotron-mask"></div>
+  <div class="container">
+    <div class="col-sm-6">
+      <h1>Awesome Inc {{page.title}}</h1>
+      <p class="hidden-xs">{{page.description}}</p>
+    </div>
+    <div class="col-sm-5 col-sm-offset-1">
+      {% include formspree.html %}
+    </div>
+  </div>
+</div>
+<div class="container">
+  <!-- Headline text -->
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2>Growing World-Class Software Developers</h2>
+      <p>Software is all around us. Awesome Inc U exists to help people learn to code and unlock the power to create their own Mobile Apps, Websites, and Video Games. Start your journey with our classes in downtown Lexington, no prior programming experience necessary. Come join the hundreds of kids and adults who are learning to harness the power of software.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      {{content}}
+      {% include formspree.html %}
+    </div>
+  </div>
+</div> <!-- container-->

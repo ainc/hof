@@ -1,0 +1,36 @@
+---
+layout: page
+---
+
+   <div>
+    
+    	<div class="container">
+    		
+  			<div class="row head1">
+    			<div class="col-md-12" >
+    				<h1>{{ page.title }}</h1>
+            <p>{{ content }}</p>
+            <hr>
+            <h2>Students</h2>
+    			</div>
+      	</div>
+        <!-- Four columns of text -->
+        <div class="row marketing top-marketing">
+          {% for student in site.data.alumni-bootcamp-f16 %}
+          <div class="col-lg-4">
+              <img class="img-thumbnail" src="/img/alumni/{{ student.image }}" alt="{{ student.name }} - Awesome Inc U Web Developer Bootcamp" width="140" height="140">
+              <h3>{{ student.name }}</h3>
+            <div class="btn-group" role="group">
+              <a class="btn btn-default" href="{{ student.website }}" role="button">Portfolio</a>
+              <a class="btn btn-default" href="{{ student.linkedin }}" role="button">LinkedIn</a>
+              <a class="btn btn-default" href="{{ student.github }}" role="button">GitHub</a>
+            </div>
+            <br>
+            <br>
+            <br>
+          </div><!-- /.col-lg-4 -->   
+          {% endfor %}
+          </div> <!-- /row -->
+    	</div> <!-- /container -->
+    
+    </div> <!-- /about -->

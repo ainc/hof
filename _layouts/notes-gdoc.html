@@ -1,0 +1,28 @@
+---
+layout: page
+---
+
+   <div>
+    
+    	<div class="container">
+    		
+  			<div class="row head1">
+    			<div class="span12" >
+    				<h2>{{ page.title }} <a class="btn btn-primary" href="/register/" role="button">Register</a></h2>
+    			</div>
+          <div class="span12" >
+            <p>These are the notes for Awesome Inc U's 1-day <a href="/curriculum/#{{ page.curriculum_link }}">{{ page.title }}</a>. You can also view these notes directly on <a href="https://docs.google.com/document/d/{{ page.doc_id }}/edit">Google Drive</a></p>
+          </div>
+      	</div>
+
+        <div class="span8 offset2">
+          <div class="row" id="starlight">
+              <div class="embed-responsive embed-responsive-4by3">
+          <iframe src="https://docs.google.com/document/d/{{ page.doc_id }}/pub?embedded=true"  height="{{ page.notes_height }}" ></iframe>
+</div>
+          </div>
+        </div>        
+
+    	</div> <!-- /container -->
+    
+    </div> <!-- /about -->

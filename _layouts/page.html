@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    {% include head.html %}
+</head>
+    <body>
+        <header>
+            {% include header.html %}
+        </header>
+
+        <div id="pjax-container" class="body">
+            <div class="container">
+                <section class="content">
+
+                    {{content}}
+                </section>
+            </div>
+        </div>
+
+        {% include footer.html %}
+
+        {% if page.url contains '/blog/' or page.url == '/' %}
+        {% include mailchimp_popup.html %}
+        {% endif %}
+    </body>
+</html>

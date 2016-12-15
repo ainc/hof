@@ -1,0 +1,44 @@
+---
+layout: page
+---
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="bg-image" style="background-image: url({{page.cover}});"></div>
+    <div class="jumbotron " >
+      <div class="container center">
+        <h1>{{page.title}}</h1>
+        <p>{{page.description}}</p>
+          {% if page.dates %}
+            {% for date in page.dates %}
+               <p><a class="btn btn-primary btn-lg" href={{date[1]}} role="button" > Register {{date[0]}} &raquo;</a></p>
+            {% endfor %}
+          {% else %}
+            {% if page.registration %}
+              <p><a class="btn btn-primary btn-lg" href="{{page.registration}}" target="_blank" role="button"> Register &raquo;</a></p>
+            {% elsif page.application %}
+              <p><a class="btn btn-primary btn-lg" href="{{page.application}}" role="button">Apply Now &raquo;</a></p>
+            {% endif %}
+              &raquo;</a></p>
+          {% endif %}
+      </div> 
+</div>
+        <div class="container scrollup">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+
+          {{content}}
+        
+          {% if page.dates %}
+            {% for date in page.dates %}
+               <p><a class="btn btn-primary btn-lg center-block" href={{date[1]}} role="button" > Register {{date[0]}} &raquo;</a></p>
+            {% endfor %}
+          {% else %}
+            {% if page.registration %}
+              <p><a class="btn btn-primary btn-lg center-block" href="{{page.registration}}" target="_blank" role="button"> Register &raquo;</a></p>
+            {% elsif page.application %}
+              <p><a class="btn btn-primary btn-lg center-block" href="{{page.application}}" role="button">Apply Now &raquo;</a></p>
+            {% endif %}
+          {% endif %}
+        </div>
+      </div>
+ </div>

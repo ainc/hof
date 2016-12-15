@@ -1,0 +1,18 @@
+---
+layout: page
+---
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-8 col-sm-offset-2 blog-main">
+
+          <div class="blog-post">
+                <h1 class="blog-post-title">{{ page.title }}</h1>
+                <p class="blog-post-meta">{{ page.date | date: "%b %d, %Y" }}</p>
+                <p>{{content }}</p>
+            </div>
+        </div><!-- /.blog-main -->
+
+     </div><!-- /.row -->
+</div>

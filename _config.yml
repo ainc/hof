@@ -1,0 +1,11 @@
+name: Kentucky Entrepreneur Hall of Fame
+url: https://www.entrepreneurhof.com
+description: "Entrepreneur Hall of Fame for Kentucky"
+author: Awesome Inc
+# google_verification: oiWfM5j5u1IuiWaAkBu8lKyqs5o1ilQCfnM0raw6JPk
+highlighter: rouge
+# permalink: /blog/:year/:month/:day/:title/
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+exclude: [node_modules]

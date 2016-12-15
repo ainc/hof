@@ -1,0 +1,18 @@
+---
+layout: page
+---
+
+   <div>
+    
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1" >
+            <h2>Awesome Inc {{ page.title }} Application</h2>
+            <p>This is the application for <a href="{{page.course}}">Awesome Inc {{ page.title }}</a>. You can also view this application directly on <a href="https://docs.google.com/forms/d/{{ page.doc_id }}/viewform">Google Drive</a></p>
+            <iframe src="https://docs.google.com/forms/d/{{ page.doc_id }}/viewform?embedded=true" height="{{ page.notes_height }}" width="100%"></iframe>
+          </div>
+        </div>
+      </div> <!-- /container -->
+    
+    </div> <!-- /about -->
