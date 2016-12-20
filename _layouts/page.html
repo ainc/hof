@@ -19,11 +19,7 @@
                 </section>
             </div>
         </div>
-
+        {% include js.html %}
         {% include footer.html %}
-
-        {% if page.url contains '/blog/' or page.url == '/' %}
-        {% include mailchimp_popup.html %}
-        {% endif %}
     </body>
 </html>
