@@ -609,6 +609,9 @@ li.foundersVideo a:hover {
   text-shadow: 0 0 10px rgba(0,0,0,0.8);
   color: #fff;
 }
+li.foundersVideo img {
+  height: 275px;
+}
 
 div.play {
   text-align:center;
@@ -646,6 +649,8 @@ section#sponsors a {
 
 section#sponsors img {
   vertical-align:middle;
+  max-width: 60%;
+  margin-bottom: 20px;
 }
 
 section#sponsors .sponsor {
@@ -679,6 +684,8 @@ section#sponsors .sponsor {
 .supporting-sponsors {
   position: relative;
 }
+
+
 
 .supporting-sponsors span {
   width: 31%;
@@ -1161,6 +1168,15 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 
 
 
+/* ===============================================
+  ABOUT PAGE
+   ============================================= */
+
+.noticeMe{
+  border-bottom:#D81213;
+  border-bottom-style:dotted;
+  color:#d81213;
+}
 
 
 

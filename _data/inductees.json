@@ -1,6 +1,62 @@
 
 [  
    {  
+      "company":"Big Ass Solutions",
+      "pic_name":"carey_smith",
+      "display_name":"Carey Smith",
+      "abbreviated_name":"carey-smith",
+      "year_class":"twenty-sixteen"
+   },
+   {  
+      "company":"High Speed Access Corp, OPM Services, Inc.",
+      "pic_name":"kent_oyler",
+      "display_name":"Kent Oyler",
+      "abbreviated_name":"kent-oyler",
+      "year_class":"twenty-sixteen"
+   },
+   {  
+      "company":"Tempur Sealy International, Inc",
+      "pic_name":"robert_trussell",
+      "display_name":"Robert B. Trussell, Jr.",
+      "abbreviated_name":"robert-trussell",
+      "year_class":"twenty-sixteen"
+   },
+   {  
+      "company":"Kentucky Fried Chicken",
+      "pic_name":"colonel_sanders",
+      "display_name":"Colonel Sanders",
+      "abbreviated_name":"colonel-sanders",
+      "year_class":"twenty-sixteen"
+   },
+   {  
+      "company":"Thorntons",
+      "pic_name":"james_thorton",
+      "display_name":"James Thornton",
+      "abbreviated_name":"james-thornton",
+      "year_class":"twenty-fifteen"
+   },
+   {  
+      "company":"Brown-Forman",
+      "pic_name":"george_garvin_brown",
+      "display_name":"George Garvin Brown",
+      "abbreviated_name":"george-garvin-brown",
+      "year_class":"twenty-fifteen"
+   },
+   {  
+      "company":"Pattco LLC",
+      "pic_name":"james_patterson",
+      "display_name":"Jim Patterson",
+      "abbreviated_name":"james-patterson",
+      "year_class":"twenty-fifteen"
+   },
+   {  
+      "company":"Greer Companies",
+      "pic_name":"phil_greer",
+      "display_name":"Phil Greer",
+      "abbreviated_name":"phil-greer",
+      "year_class":"twenty-fifteen"
+   },
+   {  
       "company":"Booth Energy Group",
       "pic_name":"james_booth",
       "display_name":"James Booth",
