@@ -261,6 +261,11 @@ header > .container > .billboard > h2 > #tagline {
   margin-top: -18px;
 }
 
+#nominate:hover {
+  border: 2px solid #000;
+  border-bottom: none;
+}
+
 header .top-alert {
   padding: 10px;
   text-align: center;
