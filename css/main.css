@@ -263,7 +263,6 @@ header > .container > .billboard > h2 > #tagline {
 
 #nominate:hover {
   border: 2px solid #000;
-  border-bottom: none;
 }
 
 header .top-alert {
