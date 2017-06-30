@@ -209,21 +209,6 @@ header > .container > #nav > ul > li:hover, header > .container > #nav > ul > li
   border-top: 4px solid #f11a1a;
 }
 
-header > .container > #nav > ul > li:hover ul, header > .container > #nav > ul > li.active {
-  visibility:visible;
-  opacity:1;
-  filter:alpha(opacity=100);
-}
-
-header > .container > #nav > ul > li > ul > li:hover, header > .container > #nav > ul > li > ul >li.active {
-  background: #f11a1a;
-}
-
-header > .container > #nav > ul > li > ul > li a {
-  font-size:18px;
-}
-
-
 
 header > .container > #nav > ul > li a {
   color: white !important;
@@ -684,11 +669,21 @@ section#sponsors .sponsor {
   border-bottom: 1px solid #bbb;
 }
 
-.sponsor-title h4 {
+.sponsor-title a {
   margin: auto;
   margin-bottom: -10px;
   background: #fff;
   width: 170px;
+}
+
+.post-report {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.post-report h4 {
+  margin: auto;
+  width: 150px;
 }
 
 .sponsor-logos {
