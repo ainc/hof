@@ -209,6 +209,22 @@ header > .container > #nav > ul > li:hover, header > .container > #nav > ul > li
   border-top: 4px solid #f11a1a;
 }
 
+header > .container > #nav > ul > li:hover ul, header > .container > #nav > ul > li.active {
+  visibility:visible;
+  opacity:1;
+  filter:alpha(opacity=100);
+}
+
+header > .container > #nav > ul > li > ul > li:hover, header > .container > #nav > ul > li > ul >li.active {
+  background: #f11a1a;
+}
+
+header > .container > #nav > ul > li > ul > li a {
+  font-size:18px;
+}
+
+
+
 header > .container > #nav > ul > li a {
   color: white !important;
   display: block;
@@ -821,7 +837,7 @@ footer .credits a:hover {
   padding: 0;
   overflow-y: hidden;
 }
-  
+
 .tweet_list li {
   overflow-y: auto;
   overflow-x: hidden;
@@ -831,20 +847,20 @@ footer .credits a:hover {
   background: url('../img/tweet-icon.png') left no-repeat;
   padding-left: 26px;
 }
-    
+
 .tweet_list li a {
 }
 
 .tweet_list li a:hover {
 }
-    
+
 .tweet_list .tweet_even {
 }
-    
+
 .tweet_list .tweet_avatar {
   padding-right: .5em; float: left;
 }
-    
+
 .tweet_list .tweet_avatar img {
   vertical-align: middle;
 }
