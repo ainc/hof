@@ -2,8 +2,16 @@
  * HALL OF FAME RESPONSIVE
  */
 
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 @media (min-width: 1200px) {
-  
+
 }
 
 @media (max-width: 1200px) {
@@ -206,6 +214,7 @@
 
 @media (max-width: 480px) {
 
+
   header > .container > .billboard {
     width:260px;
   }
@@ -227,6 +236,7 @@
 
   ul.da-thumbs {
     overflow: visible !important;
+    margin-left: 50px;
   }
 
 
