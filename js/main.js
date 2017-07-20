@@ -34,7 +34,7 @@ function pageLoad(fullRefresh){
 		toggleBillboard(file);
 	}
 
-	if (isHomePage(file)){		
+	if (isHomePage(file)){
 		$('#gallery').imagesLoaded(function(){
 			initGallery();
 		});
@@ -42,7 +42,7 @@ function pageLoad(fullRefresh){
 			initGalleryEE();
 		});
 	}
-	
+
 	if (isFoundersSeries(file)){
 		$('#founders').imagesLoaded(function(){
 			initVideos();
@@ -70,14 +70,14 @@ function toggleContentOpacity(){
 	$('#pjax-container').toggleClass('show hide');
 }
 
-function toggleNavbarLink(file){	
-	$('#navbar li a').each(function(){		
+function toggleNavbarLink(file){
+	$('#navbar li a').each(function(){
 		var href = $(this).attr('href');
 		if ((href == '/' && file == '') || (file != '' && file.indexOf(href) >= 0)){
 			$(this).parent().addClass('active');
 		}
 		else{
-			$(this).parent().removeClass('active');	
+			$(this).parent().removeClass('active');
 		}
 	});
 }
@@ -119,8 +119,8 @@ function initGallery(){
 	});
 
 	// hoverdir
-	$('#inductees > li').each(function(){ 
-		$(this).hoverdir(); 
+	$('#inductees > li').each(function(){
+		$(this).hoverdir();
 	});
 }
 
@@ -148,8 +148,8 @@ function initGalleryEE(){
 	});
 
 	// hoverdir
-	$('#inducteesEE > li').each(function(){ 
-		$(this).hoverdir(); 
+	$('#inducteesEE > li').each(function(){
+		$(this).hoverdir();
 	});
 }
 
