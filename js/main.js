@@ -1,9 +1,6 @@
 var shadowBoxInitialized = false;
 
 $(function(){
-	$(document).pjax('#navbar li a, #inductees li a, #inducteesEE li a, .bioColumn a','#pjax-container', {
-		fragment: '#pjax-container'
-	});
 
 	$(document).on('pjax:send', function(){
 		toggleContentOpacity();
