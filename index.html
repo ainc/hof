@@ -85,7 +85,7 @@ homepage: true
         <ul id="inducteesEE" class="da-thumbs inductees">
             {% for ind in site.data.emerging %}
             <li class="inductee {{ ind.year_class }}">
-                <a href="/{{ ind.ext_url }}">
+                <a href="{{ ind.ext_url }}">
                     <img src="img/{{ ind.pic_name }}.jpg">
                     <div>
                         <span class="name">
