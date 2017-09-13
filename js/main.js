@@ -1,5 +1,7 @@
 var shadowBoxInitialized = false;
 
+var lastFiltered, initFilter = false;
+
 $(function(){
 
 	$(document).on('pjax:send', function(){
@@ -115,7 +117,7 @@ function initGallery(){
 	$('select.filter').change(function(){
 		$("select option:selected").each(function () {
 			var selector = $(this).attr('data-filter');
-			console.log(selector);
+
 			$inductees.isotope({ filter: selector });
 			return false;
 		});
@@ -139,7 +141,25 @@ function initGalleryEE(){
 	$('#filtersEE a').click(function(){
 	  var selector = $(this).attr('data-filter');
 		console.log(selector);
-	  $inductees.isotope({ filter: selector });
+		lastFiltered = selector.split(" ");
+		lastFiltered = lastFiltered[lastFiltered.length - 1];
+		console.log(lastFiltered);
+		if(initFilter === false){
+				initFilter = true;
+				$inductees.isotope({ filter: selector });
+		}
+		else{
+			console.log(selector + lastFiltered);
+			$inductees.isotope({ filter: selector + lastFiltered });
+		}
+
+		//test scroll for jquery
+		//seems to not work due to jQuery isotope plugin
+		$("body html").animate({
+			scrollTo: "300px"
+		}, 1000);
+
+
 	  return false;
 	});
 
@@ -170,6 +190,7 @@ function initVideos(){
 
 	$('#filters a').click(function(){
 	  var selector = $(this).attr('data-filter');
+
 	  $foundersVideo.isotope({ filter: selector });
 	  return false;
 	});
