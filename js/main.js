@@ -1,5 +1,7 @@
 var shadowBoxInitialized = false;
 
+var lastFiltered, initFilter = false;
+
 $(function(){
 
 	$(document).on('pjax:send', function(){
@@ -21,6 +23,10 @@ $(function(){
 	});
 
 	pageLoad(true);
+
+	console.log("DOM Loaded");
+
+
 });
 
 function pageLoad(fullRefresh){
@@ -101,8 +107,9 @@ function initGallery(){
 	  layoutMode : 'fitRows'
 	});
 
-	$('#filters a').click(function(){
+	$('#filters a').on("click", function(){
 	  var selector = $(this).attr('data-filter');
+		console.log(selector);
 	  $inductees.isotope({ filter: selector });
 	  return false;
 	});
@@ -110,6 +117,7 @@ function initGallery(){
 	$('select.filter').change(function(){
 		$("select option:selected").each(function () {
 			var selector = $(this).attr('data-filter');
+
 			$inductees.isotope({ filter: selector });
 			return false;
 		});
@@ -132,13 +140,34 @@ function initGalleryEE(){
 
 	$('#filtersEE a').click(function(){
 	  var selector = $(this).attr('data-filter');
-	  $inductees.isotope({ filter: selector });
+		console.log(selector);
+		lastFiltered = selector.split(" ");
+		lastFiltered = lastFiltered[lastFiltered.length - 1];
+		console.log(lastFiltered);
+		if(initFilter === false){
+				initFilter = true;
+				$inductees.isotope({ filter: selector });
+		}
+		else{
+			console.log(selector + lastFiltered);
+			$inductees.isotope({ filter: selector + lastFiltered });
+		}
+
+		//test scroll for jquery
+		//seems to not work due to jQuery isotope plugin
+		$("body html").animate({
+			scrollTo: "300px"
+		}, 1000);
+
+
 	  return false;
 	});
+
 
 	$('select.filterEE').change(function(){
 		$("select option:selected").each(function () {
 			var selector = $(this).attr('data-filter');
+			console.log(selector);
 			$inductees.isotope({ filter: selector });
 			return false;
 		});
@@ -161,6 +190,7 @@ function initVideos(){
 
 	$('#filters a').click(function(){
 	  var selector = $(this).attr('data-filter');
+
 	  $foundersVideo.isotope({ filter: selector });
 	  return false;
 	});
@@ -189,6 +219,10 @@ function isMedia(file){
 	return (file.indexOf('media') >= 0);
 }
 
+function moveTo(){
+	console.log("MoveTo");
+}
+
 // TWITTER PLUGIN
 jQuery(function($){
 	$(".tweet").tweet({
@@ -207,6 +241,7 @@ jQuery(function($){
 function initPhotosAbout(){
 
 	$.getJSON("http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=be58a8e94257fd0384521f22e4759fcb&user_id=40598240@N02&photoset_id=72157632009763509&per_page=6&format=json&jsoncallback=?", function(data){
+		console.log(this);
 			var list = $("<ul></ul>");
 	        $.each(data.photoset.photo, function(i,photo){
 		        var img_src = "http://farm" + photo.farm + ".static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "q.jpg";
