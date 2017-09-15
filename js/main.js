@@ -143,14 +143,13 @@ function initGalleryEE(){
 		console.log(selector);
 		lastFiltered = selector.split(" ");
 		lastFiltered = lastFiltered[lastFiltered.length - 1];
-		console.log(lastFiltered);
+
 		if(initFilter === false){
 				initFilter = true;
 				$inductees.isotope({ filter: selector });
 		}
 		else{
-			console.log(selector + lastFiltered);
-			$inductees.isotope({ filter: selector + lastFiltered });
+			$inductees.isotope({ filter: selector });
 		}
 
 		//test scroll for jquery
