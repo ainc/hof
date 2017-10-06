@@ -1,230 +1,252 @@
 
-[  
-   {  
+[
+
+   {
+     "company":"Signature HealthCARE",
+     "pic_name":"joe_steier",
+     "display_name":"Joe Steier",
+     "abbreviated_name":"joe-steier",
+     "year_class":"twenty-seventeen"
+   },
+   {
+     "company":"Innovaive Mattress Solutions",
+     "pic_name":"kimberly_knopf",
+     "display_name":"Kimberly Knopf",
+     "abbreviated_name":"kimberly-knopf",
+     "year_class":"twenty-seventeen"
+   },
+   {
+     "company":"Chrysalis Ventures",
+     "pic_name":"doug_cobb",
+     "display_name":"Doug Cobb",
+     "abbreviated_name":"doug-cobb",
+     "year_class":"twenty-seventeen"
+   },
+   {
       "company":"Big Ass Solutions",
       "pic_name":"carey_smith",
       "display_name":"Carey Smith",
       "abbreviated_name":"carey-smith",
       "year_class":"twenty-sixteen"
    },
-   {  
+   {
       "company":"High Speed Access Corp, OPM Services, Inc.",
       "pic_name":"kent_oyler",
       "display_name":"Kent Oyler",
       "abbreviated_name":"kent-oyler",
       "year_class":"twenty-sixteen"
    },
-   {  
+   {
       "company":"Tempur Sealy International, Inc",
       "pic_name":"robert_trussell",
       "display_name":"Robert B. Trussell, Jr.",
       "abbreviated_name":"robert-trussell",
       "year_class":"twenty-sixteen"
    },
-   {  
+   {
       "company":"Kentucky Fried Chicken",
       "pic_name":"colonel_sanders",
       "display_name":"Colonel Sanders",
       "abbreviated_name":"colonel-sanders",
       "year_class":"twenty-sixteen"
    },
-   {  
+   {
       "company":"Thorntons",
       "pic_name":"james_thorton",
       "display_name":"James Thornton",
       "abbreviated_name":"james-thornton",
       "year_class":"twenty-fifteen"
    },
-   {  
+   {
       "company":"Brown-Forman",
       "pic_name":"george_garvin_brown",
       "display_name":"George Garvin Brown",
       "abbreviated_name":"george-garvin-brown",
       "year_class":"twenty-fifteen"
    },
-   {  
+   {
       "company":"Pattco LLC",
       "pic_name":"james_patterson",
       "display_name":"Jim Patterson",
       "abbreviated_name":"james-patterson",
       "year_class":"twenty-fifteen"
    },
-   {  
+   {
       "company":"Greer Companies",
       "pic_name":"phil_greer",
       "display_name":"Phil Greer",
       "abbreviated_name":"phil-greer",
       "year_class":"twenty-fifteen"
    },
-   {  
+   {
       "company":"Booth Energy Group",
       "pic_name":"james_booth",
       "display_name":"James Booth",
       "abbreviated_name":"james-booth",
       "year_class":"twenty-fourteen"
    },
-   {  
+   {
       "company":"Bridgeman Foods, Inc.",
       "pic_name":"junior_bridgeman",
       "display_name":"Ulysses Lee \"Junior\" Bridgeman",
       "abbreviated_name":"junior-bridgeman",
       "year_class":"twenty-fourteen"
    },
-   {  
+   {
       "company":"Outback Steakhouse",
       "pic_name":"chris_sullivan",
       "display_name":"Chris Sullivan",
       "abbreviated_name":"chris-sullivan",
       "year_class":"twenty-fourteen"
    },
-   {  
+   {
       "company":"Computer Services, Inc.",
       "pic_name":"john_williams",
       "display_name":"John Williams",
       "abbreviated_name":"john-williams",
       "year_class":"twenty-fourteen"
    },
-   {  
+   {
       "company":"RJ Corman Railroad Group",
       "pic_name":"rj_corman",
       "display_name":"RJ Corman",
       "abbreviated_name":"rj-corman",
       "year_class":"twenty-thirteen"
    },
-   {  
+   {
       "company":"Bill Gatton Motors",
       "pic_name":"bill_gatton",
       "display_name":"Bill Gatton",
       "abbreviated_name":"bill-gatton",
       "year_class":"twenty-thirteen"
    },
-   {  
+   {
       "company":"Metridata Computer & Servend International",
       "pic_name":"george_fischer",
       "display_name":"George Fischer",
       "abbreviated_name":"george-fischer",
       "year_class":"twenty-thirteen"
    },
-   {  
+   {
       "company":"Harper Industries",
       "pic_name":"billy_harper",
       "display_name":"Billy Harper",
       "abbreviated_name":"billy-harper",
       "year_class":"twenty-thirteen"
    },
-   {  
+   {
       "company":"Forcht Group",
       "pic_name":"terry_forcht",
       "display_name":"Terry Forcht",
       "abbreviated_name":"terry-forcht",
       "year_class":"twenty-twelve"
    },
-   {  
+   {
       "company":"Vencor Ventas",
       "pic_name":"bruce_lunsford",
       "display_name":"Bruce Lunsford",
       "abbreviated_name":"bruce-lunsford",
       "year_class":"twenty-twelve"
    },
-   {  
+   {
       "company":"Rescare",
       "pic_name":"ronald_geary",
       "display_name":"Ronald Geary",
       "abbreviated_name":"ronald-geary",
       "year_class":"twenty-twelve"
    },
-   {  
+   {
       "company":"iPay Technologies",
       "pic_name":"dana_bowers",
       "display_name":"Dana Bowers",
       "abbreviated_name":"dana-bowers",
       "year_class":"twenty-eleven"
    },
-   {  
+   {
       "company":"Humana",
       "pic_name":"david_jones_sr",
       "display_name":"David Jones, Sr.",
       "abbreviated_name":"david-jones-sr",
       "year_class":"twenty-eleven"
    },
-   {  
+   {
       "company":"Texas Roadhouse",
       "pic_name":"kent_taylor",
       "display_name":"Kent Taylor",
       "abbreviated_name":"kent-taylor",
       "year_class":"twenty-eleven"
    },
-   {  
+   {
       "company":"Humana",
       "pic_name":"wendell_cherry",
       "display_name":"Wendell Cherry",
       "abbreviated_name":"wendell-cherry",
       "year_class":"twenty-eleven"
    },
-   {  
+   {
       "company":"Makers Mark",
       "pic_name":"bill_samuels",
       "display_name":"Bill Samuels, Jr.",
       "abbreviated_name":"bill-samuels",
       "year_class":"twenty-eleven"
    },
-   {  
+   {
       "company":"Kentucky Fried Chicken",
       "pic_name":"john_y_brown",
       "display_name":"John Y Brown Jr.",
       "abbreviated_name":"john-y-brown",
       "year_class":"twenty-ten"
    },
-   {  
+   {
       "company":"Alltech",
       "pic_name":"pearse_lyons",
       "display_name":"Pearse Lyons",
       "abbreviated_name":"pearse-lyons",
       "year_class":"twenty-ten"
    },
-   {  
+   {
       "company":"W.T. Young Foods Overbrook Farm",
       "pic_name":"william_young",
       "display_name":"William T. Young",
       "abbreviated_name":"william-young",
       "year_class":"twenty-ten"
    },
-   {  
+   {
       "company":"Long John Silvers Jerry's Restaurant",
       "pic_name":"warren_rosenthal",
       "display_name":"Warren Rosenthal",
       "abbreviated_name":"warren-rosenthal",
       "year_class":"twenty-ten"
    },
-   {  
+   {
       "company":"Papa John's",
       "pic_name":"john_schnatter",
       "display_name":"John Schnatter",
       "abbreviated_name":"john-schnatter",
       "year_class":"twenty-ten"
    },
-   {  
+   {
       "company":"Host Communications",
       "pic_name":"jim_host",
       "display_name":"Jim Host",
       "abbreviated_name":"jim-host",
       "year_class":"twenty-ten"
    },
-   {  
+   {
       "company":"Belcan",
       "pic_name":"ralph_anderson",
       "display_name":"Ralph G. Anderson",
       "abbreviated_name":"ralph-anderson",
       "year_class":"twenty-ten"
    },
-   {  
+   {
       "company":"Exstream Software",
       "pic_name":"davis_marksbury",
       "display_name":"Davis Marksbury",
       "abbreviated_name":"davis-marksbury",
       "year_class":"twenty-ten"
    },
-   {  
+   {
       "company":"Projectron Inc. DataBeam Corp. UK President",
       "pic_name":"lee_todd",
       "display_name":"Lee Todd",
