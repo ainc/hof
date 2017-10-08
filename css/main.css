@@ -1193,8 +1193,18 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
   color:#d81213;
 }
 
-
-
+/* ===============================================
+  BOOK PAGE
+   ============================================= */
+.book h3 {
+  margin: 10px 20px;
+}
+.book li, p {
+  margin-left: 20px;
+}
+.book a {
+  color: #af0a09;
+}
 
 
 
