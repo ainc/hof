@@ -101,6 +101,7 @@ function toggleBillboard(file){
 function initGallery(){
 	// isotope
 	var $inductees = $('.inductees');
+	console.log(inductees);
 
 	$inductees.isotope({
 	  itemSelector : '.inductee',
@@ -130,34 +131,31 @@ function initGallery(){
 }
 
 function initGalleryEE(){
-	// isotope
-	var $inductees = $('.inductees');
-
-	$inductees.isotope({
-	  itemSelector : '.inductee',
+	// jquery grabs induceesEE element and its inner html
+	var $inducteesEE = $('.inducteesEE');
+	console.log(inducteesEE);
+	//filters a specific item by class name i.e -> "inducteeEE"
+	$inducteesEE.isotope({
+	  itemSelector : '.inducteeEE',
 	  layoutMode : 'fitRows'
 	});
 
+
+	//filters on click
 	$('#filtersEE a').click(function(){
 	  var selector = $(this).attr('data-filter');
 		console.log(selector);
-		lastFiltered = selector.split(" ");
-		lastFiltered = lastFiltered[lastFiltered.length - 1];
 
 		if(initFilter === false){
 				initFilter = true;
-				$inductees.isotope({ filter: selector });
+				$inducteesEE.isotope({ filter: selector });
 		}
 		else{
-			$inductees.isotope({ filter: selector });
+			$inducteesEE.isotope({ filter: selector });
 		}
 
 		//test scroll for jquery
 		//seems to not work due to jQuery isotope plugin
-		$("body html").animate({
-			scrollTo: "300px"
-		}, 1000);
-
 
 	  return false;
 	});
@@ -167,7 +165,7 @@ function initGalleryEE(){
 		$("select option:selected").each(function () {
 			var selector = $(this).attr('data-filter');
 			console.log(selector);
-			$inductees.isotope({ filter: selector });
+			$inducteesEE.isotope({ filter: selector });
 			return false;
 		});
 	});
@@ -176,6 +174,8 @@ function initGalleryEE(){
 	$('#inducteesEE > li').each(function(){
 		$(this).hoverdir();
 	});
+
+
 }
 
 function initVideos(){

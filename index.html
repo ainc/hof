@@ -7,7 +7,7 @@ homepage: true
 
 <div id = "InducteeSection" class="title">
     <h2 >Inductees</h2>
-    <ul id="filters" class="hidden-phone">
+    <!--<ul id="filters" class="hidden-phone">
         <li><a href="#" data-filter="*">All</a></li>
         <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-seventeen">2017</a></li>
         <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-sixteen">2016</a></li>
@@ -17,6 +17,17 @@ homepage: true
         <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-twelve">2012</a></li>
         <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-eleven">2011</a></li>
         <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-ten">2010</a></li>
+    </ul>-->
+    <ul id="filters" class="hidden-phone">
+        <li><a href="#" data-filter="*">All</a></li>
+        <li><a href="#" data-filter= ".twenty-seventeen">2017</a></li>
+        <li><a href="#" data-filter= ".twenty-sixteen">2016</a></li>
+        <li><a href="#" data-filter= ".twenty-fifteen">2015</a></li>
+        <li><a href="#" data-filter= ".twenty-fourteen">2014</a></li>
+        <li><a href="#" data-filter= ".twenty-thirteen">2013</a></li>
+        <li><a href="#" data-filter= ".twenty-twelve">2012</a></li>
+        <li><a href="#" data-filter= ".twenty-eleven">2011</a></li>
+        <li><a href="#" data-filter= ".twenty-ten">2010</a></li>
     </ul>
     <select class="filter visible-phone">
         <option data-filter="*">All</option>
@@ -34,7 +45,6 @@ homepage: true
         <h2><a href="/founders-series.php"><img src="img/founders_logo.png" class="link"></a></h2>
     </div>
 </div>
-
 <div id="gallery"  class="row-fluid">
     <div class="span12">
 
@@ -59,11 +69,9 @@ homepage: true
 
     </div>
 </div>
-
-
-<div id="galleryEE" class="title">
+<div id="Emerging Entreprenuers" class="title">
     <h2 >Emerging Entrepreneurs</h2>
-    <ul id="filtersEE" class="hidden-phone">
+    <!--<ul id="filtersEE" class="hidden-phone">
         <li><a href="#" data-filter="*">All</a></li>
         <li><a href="#" data-filter=".twenty-sixteen, .twenty-fifteen, .twenty-fourteen, .twenty-thirteen, .twenty-twelve, .twenty-eleven, .twenty-ten, .twenty-sixteen-ee">2016</a></li>
         <li><a href="#" data-filter=".twenty-sixteen, .twenty-fifteen, .twenty-fourteen, .twenty-thirteen, .twenty-twelve, .twenty-eleven, .twenty-ten, .twenty-fifteen-ee">2015</a></li>
@@ -72,25 +80,33 @@ homepage: true
         <li><a href="#" data-filter=".twenty-sixteen, .twenty-fifteen, .twenty-fourteen, .twenty-thirteen, .twenty-twelve, .twenty-eleven, .twenty-ten, .twenty-twelve-ee">2012</a></li>
         <li><a href="#" data-filter=".twenty-sixteen, .twenty-fifteen, .twenty-fourteen, .twenty-thirteen, .twenty-twelve, .twenty-eleven, .twenty-ten, .twenty-eleven-ee">2011</a></li>
         <li><a href="#" data-filter=".twenty-sixteen, .twenty-fifteen, .twenty-fourteen, .twenty-thirteen, .twenty-twelve, .twenty-eleven, .twenty-ten, .twenty-ten-ee">2010</a></li>
+    </ul>-->
+    <ul id="filtersEE" class="hidden-phone">
+        <li><a href="#" data-filter="*">All</a></li>
+        <li><a href="#" data-filter=".twenty-sixteen-ee">2016</a></li>
+        <li><a href="#" data-filter=".twenty-fifteen-ee">2015</a></li>
+        <li><a href="#" data-filter=".twenty-fourteen-ee">2014</a></li>
+        <li><a href="#" data-filter=".twenty-thirteen-ee">2013</a></li>
+        <li><a href="#" data-filter=".twenty-twelve-ee">2012</a></li>
+        <li><a href="#" data-filter=".twenty-eleven-ee">2011</a></li>
+        <li><a href="#" data-filter=".twenty-ten-ee">2010</a></li>
     </ul>
     <select class="filter visible-phone">
         <option data-filter="*">All</option>
-        <option data-filter=".twenty-sixteen">2016</option>
-        <option data-filter=".twenty-fifteen">2015</option>
-        <option data-filter=".twenty-fourteen">2014</option>
-        <option data-filter=".twenty-thirteen">2013</option>
-        <option data-filter=".twenty-twelve">2012</option>
-        <option data-filter=".twenty-eleven">2011</option>
-        <option data-filter=".twenty-ten">2010</option>
+        <option data-filter=".twenty-sixteen-ee">2016</option>
+        <option data-filter=".twenty-fifteen-ee">2015</option>
+        <option data-filter=".twenty-fourteen-ee-ee">2014</option>
+        <option data-filter=".twenty-thirteen-ee">2013</option>
+        <option data-filter=".twenty-twelve-ee">2012</option>
+        <option data-filter=".twenty-eleven-ee">2011</option>
+        <option data-filter=".twenty-ten-ee">2010</option>
     </select>
 </div>
-
-<div class="row-fluid">
+<div id="galleryEE"  class="row-fluid">
     <div class="span12">
-
-        <ul id="inducteesEE" class="da-thumbs inductees">
+        <ul id="inducteesEE" class="da-thumbs inducteesEE">
             {% for ind in site.data.emerging %}
-            <li class="inductee {{ ind.year_class }}">
+            <li class="inducteeEE {{ ind.year_class }}">
                 <a href="{{ ind.ext_url }}" target="_blank">
                     <img src="img/{{ ind.pic_name }}.jpg">
                     <div>

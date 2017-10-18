@@ -346,6 +346,66 @@ header .top-alert a {
   font-weight: normal;
 }
 
+.inducteeEE {
+  list-style: none;
+  position: relative;
+  margin: 0 0 20px 10px;
+  padding: 0;
+}
+
+.inducteeEE li {
+  float: left;
+  margin: 10px;
+  background: #fff;
+  padding: 8px;
+  position: relative;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+.inducteeEE li a,
+.inducteeEE li a img {
+  display: block;
+  position: relative;
+}
+.inducteeEE li a {
+  overflow: hidden;
+  border-bottom: none;
+}
+.inducteeEE li a div {
+  position: absolute;
+  background: #333;
+  background: rgba(213, 1, 1, 0.8);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.inducteeEE li a div > span.name {
+  display: block;
+  padding: 10px 0;
+  margin: 40px 20px 20px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+}
+
+.inducteeEE li a div > span.name > .company {
+  font-style:italic;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.inducteeEE li a div > span.view-bio {
+  text-transform: none;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  font-size: 16px;
+  font-weight: normal;
+}
+
 /**** ISOTOPE FILTERING *****/
 
 ul#filters {
@@ -1205,9 +1265,3 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .book a {
   color: #af0a09;
 }
-
-
-
-
-
-
