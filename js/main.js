@@ -132,11 +132,11 @@ function initGallery(){
 
 function initGalleryEE(){
 	// jquery grabs induceesEE element and its inner html
-	var $inducteesEE = $('.inducteesEE');
+	var $inducteesEE = $('.inducteeEE');
 	console.log(inducteesEE);
 	//filters a specific item by class name i.e -> "inducteeEE"
 	$inducteesEE.isotope({
-	  itemSelector : '.inducteeEE',
+	  itemSelector : '.emergingE',
 	  layoutMode : 'fitRows'
 	});
 

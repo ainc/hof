@@ -7,17 +7,6 @@ homepage: true
 
 <div id = "InducteeSection" class="title">
     <h2 >Inductees</h2>
-    <!--<ul id="filters" class="hidden-phone">
-        <li><a href="#" data-filter="*">All</a></li>
-        <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-seventeen">2017</a></li>
-        <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-sixteen">2016</a></li>
-        <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-fifteen">2015</a></li>
-        <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-fourteen">2014</a></li>
-        <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-thirteen">2013</a></li>
-        <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-twelve">2012</a></li>
-        <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-eleven">2011</a></li>
-        <li><a href="#" data-filter= ".twenty-sixteen-ee, .twenty-fifteen-ee, .twenty-fourteen-ee, .twenty-thirteen-ee, .twenty-twelve-ee, .twenty-eleven-ee, .twenty-ten-ee, .twenty-ten">2010</a></li>
-    </ul>-->
     <ul id="filters" class="hidden-phone">
         <li><a href="#" data-filter="*">All</a></li>
         <li><a href="#" data-filter= ".twenty-seventeen">2017</a></li>
@@ -71,16 +60,6 @@ homepage: true
 </div>
 <div id="Emerging Entreprenuers" class="title">
     <h2 >Emerging Entrepreneurs</h2>
-    <!--<ul id="filtersEE" class="hidden-phone">
-        <li><a href="#" data-filter="*">All</a></li>
-        <li><a href="#" data-filter=".twenty-sixteen, .twenty-fifteen, .twenty-fourteen, .twenty-thirteen, .twenty-twelve, .twenty-eleven, .twenty-ten, .twenty-sixteen-ee">2016</a></li>
-        <li><a href="#" data-filter=".twenty-sixteen, .twenty-fifteen, .twenty-fourteen, .twenty-thirteen, .twenty-twelve, .twenty-eleven, .twenty-ten, .twenty-fifteen-ee">2015</a></li>
-        <li><a href="#" data-filter=".twenty-sixteen, .twenty-fifteen, .twenty-fourteen, .twenty-thirteen, .twenty-twelve, .twenty-eleven, .twenty-ten, .twenty-fourteen-ee">2014</a></li>
-        <li><a href="#" data-filter=".twenty-sixteen, .twenty-fifteen, .twenty-fourteen, .twenty-thirteen, .twenty-twelve, .twenty-eleven, .twenty-ten, .twenty-thirteen-ee">2013</a></li>
-        <li><a href="#" data-filter=".twenty-sixteen, .twenty-fifteen, .twenty-fourteen, .twenty-thirteen, .twenty-twelve, .twenty-eleven, .twenty-ten, .twenty-twelve-ee">2012</a></li>
-        <li><a href="#" data-filter=".twenty-sixteen, .twenty-fifteen, .twenty-fourteen, .twenty-thirteen, .twenty-twelve, .twenty-eleven, .twenty-ten, .twenty-eleven-ee">2011</a></li>
-        <li><a href="#" data-filter=".twenty-sixteen, .twenty-fifteen, .twenty-fourteen, .twenty-thirteen, .twenty-twelve, .twenty-eleven, .twenty-ten, .twenty-ten-ee">2010</a></li>
-    </ul>-->
     <ul id="filtersEE" class="hidden-phone">
         <li><a href="#" data-filter="*">All</a></li>
         <li><a href="#" data-filter=".twenty-sixteen-ee">2016</a></li>
@@ -104,9 +83,9 @@ homepage: true
 </div>
 <div id="galleryEE"  class="row-fluid">
     <div class="span12">
-        <ul id="inducteesEE" class="da-thumbs inducteesEE">
+        <ul id="inducteesEE" class="da-thumbs inducteeEE">
             {% for ind in site.data.emerging %}
-            <li class="inducteeEE {{ ind.year_class }}">
+            <li class="emergingE {{ ind.year_class }}">
                 <a href="{{ ind.ext_url }}" target="_blank">
                     <img src="img/{{ ind.pic_name }}.jpg">
                     <div>
