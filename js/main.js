@@ -175,7 +175,6 @@ function initGalleryEE(){
 		$(this).hoverdir();
 	});
 
-
 }
 
 function initVideos(){
