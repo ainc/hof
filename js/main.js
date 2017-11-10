@@ -31,6 +31,7 @@ $(function(){
 
 function pageLoad(fullRefresh){
 	var file = window.location.pathname.split('/')[1];
+	
 	toggleNavbarLink(file);
 
 	if (!fullRefresh){
@@ -38,6 +39,7 @@ function pageLoad(fullRefresh){
 	}
 
 	if (isHomePage(file)){
+		console.log("this is the file ", file);
 		$('#gallery').imagesLoaded(function(){
 			initGallery();
 		});
