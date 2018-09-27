@@ -2,6 +2,34 @@
 [
 
    {
+     "company":"Ball Homes",
+     "pic_name":"don-ball",
+     "display_name":"Don Ball, Sr.",
+     "abbreviated_name":"don-ball",
+     "year_class":"twenty-eighteen"
+   },
+   {
+     "company":"First Southern National Bank",
+     "pic_name":"jess-correll",
+     "display_name":"Jess Correll",
+     "abbreviated_name":"jess-correll",
+     "year_class":"twenty-eighteen"
+   },
+   {
+     "company":"Alliance Resource Partners, L.P.",
+     "pic_name":"joe-craft",
+     "display_name":"Joe Craft",
+     "abbreviated_name":"joe-craft",
+     "year_class":"twenty-eighteen"
+   },
+   {
+      "company":"Summit Energy Services",
+      "pic_name":"jim-headlee",
+      "display_name":"Jim Headlee",
+      "abbreviated_name":"jim-headlee",
+      "year_class":"twenty-eighteen"
+   },
+   {
      "company":"Signature HealthCARE",
      "pic_name":"joe_steier",
      "display_name":"Joe Steier",
