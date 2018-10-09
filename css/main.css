@@ -767,7 +767,7 @@ section#sponsors .sponsor {
 
 
 
-.supporting-sponsors span {
+.supporting-sponsors .span4 {
   width: 31%;
   margin: 0 1% 20px;
   height: 80px;
@@ -880,7 +880,6 @@ footer .credits a {
 footer .credits a:hover {
   border-bottom: none;
 }
-
 
 /* ===============================================
   TWITTER PLUGIN
