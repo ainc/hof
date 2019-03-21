@@ -655,32 +655,52 @@ ul.foundersVideos {
   margin: 0px;
 }
 
-li.foundersVideo {
+li.foundersVideo, li.shadowboxVideo {
   width: 480px;
   position: relative;
   float: left;
   margin: 20px 55px;
   list-style: none;
 }
+li.shadowboxVideoSmall {
+  width: 350px;
+}
 
-li.foundersVideo img {
+li.shadowboxVideo.shadowboxVideoSmall img {
+  height: auto;
+}
+li.shadowboxVideoSmall div.play .icon-play-circle:before {
+  content: url('/img/founders_logo_white_smallest.png');
+}
+
+li.shadowboxVideoSmall div.play {
+  top: 45px;
+  left: 90px;
+}
+
+li.foundersVideo img, li.shadowboxVideo img {
   background: #fff;
   padding: 8px;
   width: 100%;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
-li.foundersVideo a {
+li.foundersVideo a, li.shadowboxVideo a {
   color: rgba(255,255,255,0.5);
 }
 
-li.foundersVideo a:hover {
+li.foundersVideo a:hover, li.shadowboxVideo a:hover {
   text-decoration: none;
   text-shadow: 0 0 10px rgba(0,0,0,0.8);
   color: #fff;
 }
-li.foundersVideo img {
+li.foundersVideo img, li.shadowboxVideo img {
   height: 275px;
+}
+
+li.shadowboxVideo {
+  float: none;
+  margin: 20px 0;
 }
 
 div.play {
