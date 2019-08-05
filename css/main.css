@@ -626,7 +626,9 @@ div.photos-link {
   MEDIA
    ============================================= */
 
-div#press {
+div#press,
+div#podcast,
+div#book {
   padding-right:40px;
 }
 
