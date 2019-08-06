@@ -632,6 +632,11 @@ div#book {
   padding-right:40px;
 }
 
+div#podcast iframe {
+  width: 100%;
+  height: 340px;
+}
+
 ul.articles {
   margin: 0 0 40px;
 }
