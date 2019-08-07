@@ -636,8 +636,17 @@ div#podcast p {
   margin: 10px 0;
 }
 
-div#podcast a {
+div#podcast .title,
+div#book .title {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+div#podcast a,
+div#book .title a {
   color: #af0a09;
+  display: block;
 }
 
 div#podcast iframe {
