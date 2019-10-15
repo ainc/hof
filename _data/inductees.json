@@ -1,6 +1,33 @@
 
 [
-
+   {
+      "company":"Appriss Inc",
+      "pic_name":"mike-davis",
+      "display_name":"Michael Davis",
+      "abbreviated_name":"mike-davis",
+      "year_class":"twenty-nineteen"
+   },
+   {
+      "company":"Rubicon Global",
+      "pic_name":"nate-morris",
+      "display_name":"Nate Morris",
+      "abbreviated_name":"nate-morris",
+      "year_class":"twenty-nineteen"
+   },
+   {
+      "company":"Scoppechio",
+      "pic_name":"debbie-scoppechio",
+      "display_name":"Debbie Scoppechio",
+      "abbreviated_name":"debbie-scoppechio",
+      "year_class":"twenty-nineteen"
+   },
+   {
+      "company":"The Webb Companies",
+      "pic_name":"r-dudley-webb",
+      "display_name":"R. Dudley Webb",
+      "abbreviated_name":"r-dudley-webb",
+      "year_class":"twenty-nineteen"
+   },
    {
      "company":"Ball Homes",
      "pic_name":"don-ball",
