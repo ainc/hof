@@ -8,4 +8,11 @@ highlighter: rouge
 plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
+
+sass:
+  add_charset: true
+  sass_dir: assets/sass
+  style: :compressed
+  sourcemap: :true
+
 exclude: [node_modules]
