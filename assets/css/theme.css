@@ -106,19 +106,15 @@ header {
   background: #af0a0a;
 }
 
-header .social-bar {
-  height: 30px;
-  border-bottom: 1px solid #f11a1a;
-}
-
 header > .container {
   background: url('../img/bg.jpg') center center repeat-y;
 }
 
 header > .container > .logo {
-  float: left;
-  width: 150px;
-  margin: -20px 0 5px;
+  width: 350px;
+  height: 175px;
+  margin-left: 400px;
+  margin-top: 30px;
 }
 
 header > .container > .logo a {
@@ -195,12 +191,13 @@ header > .top-alert #linkdiv h2 .link {
 }
 
 header > .container > #nav {
-  float: right;
+  float: center;
   margin: 0 -15px 10px 0;
 }
 
 header > .container > #nav > ul {
-  margin-right: 15px;
+  margin-left: 175px;
+  margin-top: 40px;
 }
 
 header > .container > #nav > ul > li {
@@ -211,16 +208,16 @@ header > .container > #nav > ul > li {
 }
 
 header > .container > #nav > ul > li:hover, header > .container > #nav > ul > li.active {
-  border-top: 4px solid #f11a1a;
+  border-bottom: 2px solid #f11a1a;
 }
 
 
 header > .container > #nav > ul > li a {
-  color: white !important;
+  color: black !important;
   display: block;
   font-size: 21px;
   font-family: Times New Roman, Times, Serif;
-  padding: 15px 20px;
+  padding: 15px 25px;
   text-decoration: none;
   border-bottom: none;
 }

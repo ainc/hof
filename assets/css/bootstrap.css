@@ -4993,7 +4993,7 @@ a.thumbnail.active {
   border-top-color: #e4b9c0;
 }
 .alert-danger .alert-link {
-  color: #843534;
+  color: #fff;
 }
 @-webkit-keyframes progress-bar-stripes {
   from {
