@@ -11,14 +11,10 @@
             {% include header.html %}
         </header>
 
-        <div id="pjax-container" class="body">
-            <div class="container">
-                <section class="content">
+        <main>
+            {{ content }}
+        </main>
 
-                    {{content}}
-                </section>
-            </div>
-        </div>
         {% include js.html %}
         {% include footer.html %}
     </body>

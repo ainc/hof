@@ -215,8 +215,8 @@ header > .container > #nav > ul > li:hover, header > .container > #nav > ul > li
 header > .container > #nav > ul > li a {
   color: black !important;
   display: block;
-  font-size: 21px;
-  font-family: Times New Roman, Times, Serif;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 15px 25px;
   text-decoration: none;
   border-bottom: none;
@@ -288,125 +288,7 @@ header .top-alert a {
 
 /* THUMNAIL SLIDES */
 
-.inductees {
-  list-style: none;
-  position: relative;
-  margin: 0 0 20px 10px;
-  padding: 0;
-}
 
-.inductees li {
-  float: left;
-  margin: 10px;
-  background: #fff;
-  padding: 8px;
-  position: relative;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-}
-.inductees li a,
-.inductees li a img {
-  display: block;
-  position: relative;
-}
-.inductees li a {
-  overflow: hidden;
-  border-bottom: none;
-}
-.inductees li a div {
-  position: absolute;
-  background: #333;
-  background: rgba(213, 1, 1, 0.8);
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-.inductees li a div > span.name {
-  display: block;
-  padding: 10px 0;
-  margin: 40px 20px 20px 20px;
-  font-size: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: rgba(255,255,255,0.9);
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
-}
-
-.inductees li a div > span.name > .company {
-  font-style:italic;
-  font-size: 12px;
-  font-weight: normal;
-}
-
-.inductees li a div > span.view-bio {
-  text-transform: none;
-  color: rgba(255,255,255,0.9);
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.inducteeEE {
-  list-style: none;
-  position: relative;
-  margin: 0 0 20px 10px;
-  padding: 0;
-}
-
-.inducteeEE li {
-  float: left;
-  margin: 10px;
-  background: #fff;
-  padding: 8px;
-  position: relative;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-}
-.inducteeEE li a,
-.inducteeEE li a img {
-  display: block;
-  position: relative;
-}
-.inducteeEE li a {
-  overflow: hidden;
-  border-bottom: none;
-}
-.inducteeEE li a div {
-  position: absolute;
-  background: #333;
-  background: rgba(213, 1, 1, 0.8);
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-.inducteeEE li a div > span.name {
-  display: block;
-  padding: 10px 0;
-  margin: 40px 20px 20px 20px;
-  font-size: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: rgba(255,255,255,0.9);
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
-}
-
-.inducteeEE li a div > span.name > .company {
-  font-style:italic;
-  font-size: 12px;
-  font-weight: normal;
-}
-
-.inducteeEE li a div > span.view-bio {
-  text-transform: none;
-  color: rgba(255,255,255,0.9);
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  font-size: 16px;
-  font-weight: normal;
-}
 
 /**** ISOTOPE FILTERING *****/
 
