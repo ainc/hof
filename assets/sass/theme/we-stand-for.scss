@@ -12,7 +12,9 @@
             color: white;
             font-size: 350%;
             font-family: 'AmericanPurpose', Arial, Sans-Serif;
+            letter-spacing: 3px;
         }
+        
         
         h3{
             margin-left: 10%;
@@ -20,25 +22,36 @@
             color: white;
             font-size: 350%;
             font-family: 'AmericanPurpose', Arial, Sans-Serif;
+            letter-spacing: 3px;
         }
+        
+        
 
         button{
+
+            //positioning
             margin-left: 10%;
             margin-top: 5%;
 
-            background-color: rgb(184, 15, 15);
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
+             // Button code
+            font-family: 'Open Sans';
             font-size: 16px;
             font-weight: bold;
-            border-radius: 10px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+
+            height: 5.5vh;
+            width: 27vh;
+
+            background-color: rgb(184, 15, 15);
+            padding: 15px 32px;
+            border: none;
+            border-radius: 7px;
+            display: inline-block; 
+    }
 
 
 
         }
     }
-}

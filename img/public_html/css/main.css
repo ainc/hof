@@ -755,8 +755,8 @@ footer .credits a:hover {
     font-family: 'AmericanPurpose';
     src: url('../font/american_purpose-webfont.eot');
     src: url('../font/american_purpose-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./font/american_purpose-webfont.woff') format('woff'),
-         url('./font/american_purpose-webfont.ttf') format('truetype'),
+         url('../font/american_purpose-webfont.woff') format('woff'),
+         url('../font/american_purpose-webfont.ttf') format('truetype'),
          url('../font/american_purpose-webfont.svg#AmericanPurpose') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -764,13 +764,18 @@ footer .credits a:hover {
 }
 
 
-@font-face{
-    font-family: 'OpenSans';
-    src: url('../font/OpenSans-regular.woff') format('woff'),
-         url('../font/OpenSans-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
- }
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open-sans-v17-latin-regular.eot'); 
+	src: url('../fonts/open-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'),
+		 url('../fonts/open-sans-v17-latin-regular.woff') format('woff'),
+		 url('../fonts/open-sans-v17-latin-regular.ttf') format('truetype'),
+		 url('../fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg'); 
+	font-style: normal;
+	font-weight: normal;
+	
+  }
 
  
 /* ===============================================

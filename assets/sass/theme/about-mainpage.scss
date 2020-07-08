@@ -1,0 +1,52 @@
+#about-mainpage{
+    height: 50 vh;
+  
+    h1{
+        text-align: left;
+        font-family: 'AmericanPurpose';
+        color: black;
+    }
+
+    p{
+        color: black;
+        text-align: justify;
+        text-justify: inter-word;
+        margin-left: 30vh;
+        margin-top: 2%;
+        font-size: 140%;
+        line-height: 1.3;
+        font-family: 'Open Sans';
+    }
+
+    
+    button{
+        // positioning
+        margin-left: 38%;
+        margin-top: 5%;
+
+        // Button code
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+
+        height: 5.5vh;
+        width: 27vh;
+
+        background-color: rgb(184, 15, 15);
+        padding: 15px 32px;
+        border: none;
+        border-radius: 7px;
+        display: inline-block; 
+    }
+    
+
+    .aboutImg{
+        margin-left: 100vh;
+        margin-top: 4%;
+    }
+
+
+}
