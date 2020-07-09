@@ -764,6 +764,20 @@ footer .credits a:hover {
 }
 
 
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open-sans-v17-latin-regular.eot'); 
+	src: url('../fonts/open-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'),
+		 url('../fonts/open-sans-v17-latin-regular.woff') format('woff'),
+		 url('../fonts/open-sans-v17-latin-regular.ttf') format('truetype'),
+		 url('../fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg'); 
+	font-style: normal;
+	font-weight: normal;
+	
+  }
+
+ 
 /* ===============================================
 	FONT AWESOME
    ============================================= */

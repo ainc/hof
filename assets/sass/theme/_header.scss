@@ -1,0 +1,25 @@
+/* Starts the code for the site header */
+header{
+    height: 380px;
+    background: #fff;
+
+    .alert {
+        text-align: center;
+        margin-bottom: 0;
+        padding: 0px;
+        background: rgb(184, 15, 15);
+        height: 45px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        border-radius: 0px;
+        text-shadow: none;
+        
+            a{
+                color: white;
+                font-family: 'Open Sans';
+            }
+        }
+    }
+
