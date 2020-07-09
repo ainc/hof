@@ -1,0 +1,97 @@
+#emergingEnt{
+    height: 80vh;
+    background-image: url('/img/hof-ceremony-19-56.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .headings{
+        h1{
+            color: white;
+            font-family: 'AmericanPurpose';
+            font-size: 425%;
+            letter-spacing: initial;
+            word-spacing: initial;
+
+            padding-top: 4%;
+            margin-left: 18.5%;
+        }
+        h2{
+            color: white;
+            font-family: 'Open Sans';
+            font-size: 150%;
+            letter-spacing: initial;
+            word-spacing: initial;
+            font-weight: bold;
+
+            margin-left: 18.5%;
+        }
+        h3{
+            text-align: right;
+            color: white;
+            font-family: 'Open Sans';
+            font-size: 100%;
+            letter-spacing: initial;
+            word-spacing: initial;
+            margin-right: 18.5%;
+        }
+    }
+
+    .inducteesemerge {
+
+        ul {
+            margin-left: 19%;
+            margin-top: 1%;
+
+            li{
+                float: left;
+                position: relative;
+                list-style: none;
+                padding: 1.5%;
+                color: white;
+
+                img{
+                    width: 22.5vh;
+                    height: 22.5vh;
+                    border: 5px solid white;
+                }
+            }
+        }
+    }
+
+    button{
+        //positioning
+        margin-top: 3%;
+        margin-left: 42%;
+
+        // Button code
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+
+        height: 5.5vh;
+        width: 27vh;
+
+        background-color: rgb(184, 15, 15);
+        padding: 15px 32px;
+        border: none;
+        border-radius: 7px;
+        display: inline-block;
+
+    }
+
+    p {
+        text-align: center;
+        color: white;
+        margin-top: 3%;
+        font-size: 125%;
+        font-style: italic;
+
+
+
+
+    }
+
+}
