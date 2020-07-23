@@ -10,20 +10,17 @@
         h2{ 
             margin-left: 10%;
             color: white;
-            font-size: 350%;
+            font-size: 4.4rem;
             font-family: 'AmericanPurpose', Arial, Sans-Serif;
             letter-spacing: 3px;
+            text-transform: uppercase;
+            @include screen-tablet-max {
+                font-size: 2.8rem;
+                text-align: center;
+            }
         }
         
-        
-        h3{
-            margin-left: 10%;
-            margin-top: 2%;
-            color: white;
-            font-size: 350%;
-            font-family: 'AmericanPurpose', Arial, Sans-Serif;
-            letter-spacing: 3px;
-        }
+    
         
         
 
@@ -49,6 +46,9 @@
             border: none;
             border-radius: 7px;
             display: inline-block; 
+            @include screen-tablet-max{
+                width: 30vh;
+            }
             }
         }
     }
