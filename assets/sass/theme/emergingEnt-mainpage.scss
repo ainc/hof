@@ -2,6 +2,8 @@
     height: 85vh;
     background-image: url('/img/hof-ceremony-19-56.jpg');
     background-repeat: no-repeat;
+    background-color: grey;
+    background-blend-mode: multiply;
     background-size: cover;
 
     .headings{
@@ -22,7 +24,7 @@
             letter-spacing: initial;
             word-spacing: initial;
             font-weight: bold;
-
+    
             margin-left: 18.5%;
         }
         h3{
