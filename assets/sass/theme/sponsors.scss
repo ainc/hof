@@ -1,0 +1,147 @@
+#sponsors{
+    height: 110vh;
+    background-color: white;
+    position: relative;
+
+    .sponsor-title{
+        border: none;
+        position: absolute;
+        padding-top: 5%;
+        padding-left: 15%;
+
+        h4{
+            padding-top: 3%;
+            text-transform: uppercase;
+            color: black;
+            font-family: "American Purpose";
+            font-size: 4.5rem;
+        }
+    }
+
+    .presenting{
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 15%;
+
+        h1{
+            text-transform: uppercase;
+            font-family: "Open Sans";
+            color: rgb(184, 15, 15);
+            font-size: 1.5rem;
+            
+        }
+    }
+
+    .gold{
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 40%;
+        h1{
+            text-transform: uppercase;
+            font-family: "Open Sans";
+            color: rgb(184, 15, 15); 
+            font-size: 1.5rem;
+        }
+    }
+
+    .chase{
+        position: absolute;
+        margin-top: 14%;
+        margin-left: 15.5%;
+        
+    }
+
+    .gold-sponsors{
+        position: absolute;
+        margin-top: 13.5%;
+        margin-left: 39%;
+        ul{
+            li{
+                float: left;
+                position: relative;
+                list-style: none;
+                padding: 0%;
+
+            }
+        }
+    }
+
+    .silver{
+        position: absolute;
+        margin-top: 22.5%;
+        margin-left: 15%;
+        h1{
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-family: "Open Sans";
+            color: rgb(184, 15, 15);
+        }
+    }
+
+    .silver-sponsors-top{
+        position: absolute;
+        margin-top: 27%;
+        margin-left: 13%;
+        ul{
+            li{
+                float: left;
+                width: 20%;
+                padding-right: 0%;
+                position: relative;
+                list-style: none;
+
+            }
+        }
+    }
+
+    .silver-sponsors-bottom{
+        position: absolute;
+        margin-top: 35%;
+        margin-left: 13%;
+        ul{
+            li{
+                float: left;
+                width: 20%;
+                padding-right: 0%;
+                position: relative;
+                list-style: none;
+            }
+        }
+
+    }
+
+    .contributors{
+        position: absolute;
+        margin-top: 48%;
+        margin-left: 15%;
+        h1{
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-family: "Open Sans";
+            color: rgb(184, 15, 15);
+        }
+    }
+
+    .contributor-sponsors{
+        position: absolute;
+        margin-top: 52%;
+        margin-left: 14%;
+        ul{
+            li{
+                float: left;
+                width: 20%;
+                padding-right: 0%;
+                position: relative;
+                list-style: none;
+                padding-right: 1%;
+                h2{
+                    font-family: "Open Sans";
+                    color: black;
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+}
