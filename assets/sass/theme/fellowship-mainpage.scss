@@ -12,7 +12,7 @@
 
     .info{
 
-        border: 2px solid rgb(184, 15, 15);
+        border: 2px solid rgb(192, 40, 44);
         width: 47.5%;
         height: 71%;
         margin-left: 45%;
@@ -56,17 +56,18 @@
 
         button{
         font-family: 'Open Sans';
-        font-size: 16px;
+        font-size: 1.2rem;
         font-weight: bold;
         color: white;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
+        letter-spacing: 2px;
 
         height: 5.5vh;
         width: 27vh;
 
-        background-color: rgb(184, 15, 15);
+        background-color: rgb(192, 40, 44);
         padding: 15px 32px;
         border: none;
         border-radius: 7px;

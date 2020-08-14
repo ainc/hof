@@ -1,87 +1,117 @@
 #founders-series {
     height: 80vh;
     background-color: white;
+    position: relative;
+    z-index: -1;
 
-        h1 { 
-            color: rgb(184, 15, 15);
-            font-family: 'AmericanPurpose';
-            text-align: center;
-            font-size: 450%;
-            padding-top: 4%;
-        }
-        p {
-            text-align: center;
-            color: black;
-            font-style: italic;
-            margin-top: 3%;
-            font-size: 130%;
-        }
-        .videos{
+    h1 { 
+        color: rgb(192, 40, 44);
+        font-family: 'AmericanPurpose';
+        text-align: center;
+        font-size: 450%;
+        padding-top: 4%;
+        z-index: 1;
+    }
+    p {
+        text-align: center;
+        color: black;
+        font-style: italic;
+        margin-top: 3%;
+        font-size: 130%;
+        z-index: 1;
+    }
+    .videos{
 
-            ul{
-                margin-top: 2%;
-                margin-left: 20%;
+        ul{
+            margin-top: 2%;
+            margin-left: 20%;
+            z-index: 1;
 
-                li{
-                    float: left;
-                    position: relative;
-                    list-style: none;
+            li{
+                float: left;
+                position: relative;
+                list-style: none;
                     
-                    padding-top: 2%;
-                    padding-right: 3%;
+                padding-top: 2%;
+                padding-right: 3%;
 
-                    img{
-                        width: 50vh;
-                        height: 27.5vh;
+                img{
+                    width: 50vh;
+                    height: 27.5vh;
 
 
-                    }
                 }
             }
         }
+    }
 
 
-        h2{
-            float: left;
-            margin-top: 0%;
-            margin-left: 20%;
-            color: black;
-            font-family: 'Open Sans';
-            font-size: 150%;
+    h2{
+        float: left;
+        margin-top: 0%;
+        margin-left: 20%;
+        color: black;
+        font-family: 'Open Sans';
+        font-size: 150%;
+        z-index: 1;
             
-        }
-        h3{
-            float: left;
-            margin-top: 0%;
-            margin-left: 16.5%;
-            color: black;
-            font-family: 'Open Sans';
-            font-size: 150%;
+    }
+    h3{
+        float: left;
+        margin-top: 0%;
+        margin-left: 16.5%;
+        color: black;
+        font-family: 'Open Sans';
+        font-size: 150%;
+        z-index: 1;
             
-        }
+    }
 
 
-        button{
-            //Button position
-            margin-top: 2.5%;
-            margin-left: 42%;
-
-            // Button code
-            font-family: 'Open Sans';
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-
-            height: 5.5vh;
-            width: 27vh;
-
-            background-color: rgb(184, 15, 15);
-            padding: 15px 32px;
-            border: none;
-            border-radius: 7px;
-            display: inline-block;
+    button{
+        //Button position
+        margin-top: 2.5%;
+        margin-left: 42%;
+        // Button code
+        font-family: 'Open Sans';
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 2px;
+        height: 5.5vh;
+        width: 27vh;
+        z-index: 1;
+        background-color:rgb(192, 40, 44);
+        padding: 15px 32px;
+        border: none;
+        border-radius: 7px;
+        display: inline-block;
             
-        }
+    }
+
+    .founders-logo{
+        position: absolute;
+        margin-top: -46.3%;
+        margin-left: 6%;
+        z-index: -1;
+        
+    }
+
+    .video-button-1{
+        position: absolute;
+        margin-left: 29%;
+        margin-top: -21%;
+        z-index: 1;
+        width: 10%;
+    }
+
+    .video-button-2{
+        position: absolute;
+        margin-left: 59%;
+        margin-top: -21%;
+        z-index: 1;
+        width: 10%;
+    }
 }

@@ -14,7 +14,7 @@
             color: white;
             font-size: 4.4rem;
             font-family: 'AmericanPurpose', Arial, Sans-Serif;
-            letter-spacing: 3px;
+            letter-spacing: 2%;
             text-transform: uppercase;
             line-height: normal;
             @include screen-tablet-max {
@@ -35,16 +35,17 @@
 
              // Button code
             font-family: 'Open Sans';
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: bold;
             color: white;
             text-align: center;
             text-decoration: none;
+            letter-spacing: 1px;
 
             height: 5.5vh;
             width: 27vh;
 
-            background-color: rgb(184, 15, 15);
+            background-color: rgb(192, 40, 44);
             padding: 15px 32px;
             border: none;
             border-radius: 7px;
