@@ -1,8 +1,6 @@
 #founders-series {
     height: 80vh;
-    background-color: white;
     position: relative;
-    z-index: -1;
 
     h1 { 
         color: rgb(192, 40, 44);
@@ -10,7 +8,6 @@
         text-align: center;
         font-size: 450%;
         padding-top: 4%;
-        z-index: 1;
     }
     p {
         text-align: center;
@@ -18,14 +15,12 @@
         font-style: italic;
         margin-top: 3%;
         font-size: 130%;
-        z-index: 1;
     }
     .videos{
 
         ul{
             margin-top: 2%;
             margin-left: 20%;
-            z-index: 1;
 
             li{
                 float: left;
@@ -53,7 +48,6 @@
         color: black;
         font-family: 'Open Sans';
         font-size: 150%;
-        z-index: 1;
             
     }
     h3{
@@ -63,10 +57,8 @@
         color: black;
         font-family: 'Open Sans';
         font-size: 150%;
-        z-index: 1;
             
     }
-
 
     button{
         //Button position
@@ -82,7 +74,6 @@
         letter-spacing: 2px;
         height: 5.5vh;
         width: 27vh;
-        z-index: 1;
         background-color:rgb(192, 40, 44);
         padding: 15px 32px;
         border: none;
@@ -101,17 +92,15 @@
 
     .video-button-1{
         position: absolute;
-        margin-left: 29%;
-        margin-top: -21%;
-        z-index: 1;
-        width: 10%;
+        margin-left: 30%;
+        margin-top: -19%;
+        width: 7%;
     }
 
     .video-button-2{
         position: absolute;
-        margin-left: 60%;
-        margin-top: -21%;
-        z-index: 1;
-        width: 10%;
+        margin-left: 60.5%;
+        margin-top: -19%;
+        width: 7%;
     }
 }
