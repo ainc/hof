@@ -2,6 +2,11 @@
     height: 50 vh;
     position: relative;
 
+    // Medium Screen Implementation (768 - 991)
+    @include screen-md{
+        height: 30vh;
+    }
+
         
     h1{
         // Normal Implementation
@@ -16,8 +21,9 @@
 
         // Medium Screen Implementation (768 - 991)
         @include screen-md{
-            font-size: 2.7rem;
-            margin-left: 13%;
+            font-size: 3.75rem;
+            margin-left: 2%;
+            margin-top: 16.5%;
         }
 
         // Large Screen Implementation (992 - 1200)
@@ -27,6 +33,7 @@
         }
     }   
     
+
     .paragraphs{
         // Normal Implementation
         width: 29.5%;
@@ -55,8 +62,10 @@
 
             // Medium Screen Implementation (768 - 991)
             @include screen-md {
-                font-size: 0.7rem;
+                font-size: 0.9rem;
                 line-height: 0.9;
+                margin-left: -10%;
+                margin-top: 8%;
             }
 
             // Large Screen Implementation (992 - 1200)
@@ -69,11 +78,11 @@
 
         br{
             // Normal Implementation
-            line-height: 24px;
+            line-height: 10%;
 
             // Medium Screen Implementation (768 - 991)
             @include screen-md {
-                line-height: 5px;
+                line-height: 5%;
             }
         }
     }
@@ -129,7 +138,8 @@
 
         // Medium Screen Implementation (768 - 991)
         @include screen-md {
-            width: 37.5%;
+            width: 40%;
+            margin-top: 6%;
         }
 
         // Large Screen Implementation (992 - 1200)

@@ -6,6 +6,11 @@
     background-blend-mode: multiply;
     background-size: cover;
 
+    // Medium Screen Implementation (768 - 991)
+    @include screen-md{
+        height: 60vh;
+    }
+
     .bodybox1{
         margin-top: 25%;
         
@@ -17,9 +22,9 @@
             letter-spacing: 2%;
             text-transform: uppercase;
             line-height: normal;
-            @include screen-tablet-max {
+
+            @include screen-md {
                 font-size: 2.8rem;
-                text-align: center;
             }
         }
         
@@ -35,12 +40,10 @@
             font-weight: bold;
             color: white;
             text-align: center;
-            text-decoration: none;
             letter-spacing: 1px;
             height: 5.5vh;
             width: 27vh;
             background-color: rgb(192, 40, 44);
-            padding: 15px 32px;
             border: none;
             border-radius: 7px;
             display: inline-block; 
