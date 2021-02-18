@@ -654,6 +654,25 @@ ul.articles li > .link {
   margin-bottom: 10px;
 }
 
+.iframe-video iframe {
+  width: 960px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .iframe-video iframe {
+    width: 340px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .iframe-video iframe {
+    width: 720px;
+    height: 480px;
+  }
+}
+
 /* ===============================================
   FOUNDERS SERIES
    ============================================= */
