@@ -15,5 +15,6 @@ sass:
   style: :compressed
   sourcemap: :true
 
-exclude: [vendor]
+
 exclude: [node_modules]
+exclude: [vendor]

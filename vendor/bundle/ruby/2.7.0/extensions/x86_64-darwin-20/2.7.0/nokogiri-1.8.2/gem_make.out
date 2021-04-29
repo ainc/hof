@@ -1,0 +1,669 @@
+current directory: /Users/joetorres/Desktop/hof/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.2/ext/nokogiri
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/bin/ruby -I /Users/joetorres/.rvm/rubies/ruby-2.7.2/lib/ruby/2.7.0 -r ./siteconf20210429-53923-1h4hro2.rb extconf.rb
+checking if the C compiler accepts ... yes
+checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
+Building nokogiri using packaged libraries.
+Using mini_portile version 2.3.0
+checking for iconv.h... yes
+checking for gzdopen() in -lz... yes
+checking for iconv using --with-opt-* flags... yes
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxml2-2.9.7.
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+
+Note, however, that nokogiri is not fully compatible with arbitrary
+versions of libxml2 provided by OS/package vendors.
+************************************************************************
+Extracting libxml2-2.9.7.tar.gz into tmp/x86_64-apple-darwin20.4.0/ports/libxml2/2.9.7... OK
+Running 'configure' for libxml2 2.9.7... OK
+Running 'compile' for libxml2 2.9.7... OK
+Running 'install' for libxml2 2.9.7... OK
+Activating libxml2 2.9.7 (from /Users/joetorres/Desktop/hof/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin20.4.0/libxml2/2.9.7)...
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxslt-1.1.32.
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+************************************************************************
+Extracting libxslt-1.1.32.tar.gz into tmp/x86_64-apple-darwin20.4.0/ports/libxslt/1.1.32... OK
+Running 'configure' for libxslt 1.1.32... OK
+Running 'compile' for libxslt 1.1.32... OK
+Running 'install' for libxslt 1.1.32... OK
+Activating libxslt 1.1.32 (from /Users/joetorres/Desktop/hof/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin20.4.0/libxslt/1.1.32)...
+checking for -llzma... yes
+checking for xmlParseDoc() in libxml/parser.h... yes
+checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
+checking for exsltFuncRegister() in libexslt/exslt.h... yes
+checking for xmlHasFeature()... yes
+checking for xmlFirstElementChild()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetValidStructuredErrors()... yes
+checking for xmlSchemaSetValidStructuredErrors()... yes
+checking for xmlSchemaSetParserStructuredErrors()... yes
+creating Makefile
+
+current directory: /Users/joetorres/Desktop/hof/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.2/ext/nokogiri
+make "DESTDIR=" clean
+
+current directory: /Users/joetorres/Desktop/hof/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.2/ext/nokogiri
+make "DESTDIR="
+compiling html_document.c
+In file included from html_document.c:1:
+In file included from ./html_document.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+html_document.c:16:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "0*", &rest);
+                           ^
+2 warnings generated.
+compiling html_element_description.c
+In file included from html_element_description.c:1:
+In file included from ./html_element_description.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+html_element_description.c:252:48: warning: cast from 'const struct _htmlElemDesc *' to 'void *' drops const qualifier [-Wcast-qual]
+  return Data_Wrap_Struct(klass, 0, 0, (void *)description);
+                                               ^
+2 warnings generated.
+compiling html_entity_lookup.c
+In file included from html_entity_lookup.c:1:
+In file included from ./html_entity_lookup.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling html_sax_parser_context.c
+In file included from html_sax_parser_context.c:1:
+In file included from ./html_sax_parser_context.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling html_sax_push_parser.c
+In file included from html_sax_push_parser.c:1:
+In file included from ./html_sax_push_parser.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling nokogiri.c
+In file included from nokogiri.c:1:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_attr.c
+In file included from xml_attr.c:1:
+In file included from ./xml_attr.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_attr.c:58:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "2*", &document, &name, &rest);
+                           ^
+2 warnings generated.
+compiling xml_attribute_decl.c
+In file included from xml_attribute_decl.c:1:
+In file included from ./xml_attribute_decl.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_cdata.c
+In file included from xml_cdata.c:1:
+In file included from ./xml_cdata.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_cdata.c:23:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "2*", &doc, &content, &rest);
+                           ^
+xml_cdata.c:28:56: warning: passing 'const xmlChar *' (aka 'const unsigned char *') to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  content_str_len = (content_str == NULL) ? 0 : strlen(content_str);
+                                                       ^~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/string.h:82:28: note: passing argument to parameter '__s' here
+size_t   strlen(const char *__s);
+                            ^
+xml_cdata.c:28:49: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+  content_str_len = (content_str == NULL) ? 0 : strlen(content_str);
+                  ~                             ^~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+compiling xml_comment.c
+In file included from xml_comment.c:1:
+In file included from ./xml_comment.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_comment.c:21:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "2*", &document, &content, &rest);
+                           ^
+2 warnings generated.
+compiling xml_document.c
+In file included from xml_document.c:1:
+In file included from ./xml_document.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_document.c:46:25: warning: incompatible pointer types passing 'int (xmlNodePtr, xmlNodePtr, xmlDocPtr)' (aka 'int (struct _xmlNode *, struct _xmlNode *, struct _xmlDoc *)') to parameter of type 'st_foreach_callback_func *' (aka 'int (*)(unsigned long, unsigned long, unsigned long)') [-Wincompatible-pointer-types]
+  st_foreach(node_hash, dealloc_node_i, (st_data_t)doc);
+                        ^~~~~~~~~~~~~~
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/st.h:141:57: note: passing argument to parameter here
+int rb_st_foreach(st_table *, st_foreach_callback_func *, st_data_t);
+                                                        ^
+xml_document.c:182:21: warning: cast from 'const unsigned char *' to 'char *' drops const qualifier [-Wcast-qual]
+      free((char *) doc->encoding); /* this may produce a gcc cast warning */
+                    ^
+xml_document.c:327:31: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  if(rb_scan_args(argc, argv, "01", &level) == 0)
+                              ^
+xml_document.c:354:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "0*", &rest);
+                           ^
+xml_document.c:433:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "14", &name, &type, &external_id, &system_id,
+                           ^
+xml_document.c:508:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "03", &mode, &incl_ns, &with_comments);
+                           ^
+xml_document.c:535:26: warning: cast from 'const char *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+      ns[i] = (xmlChar*) ptr;
+                         ^
+8 warnings generated.
+compiling xml_document_fragment.c
+In file included from xml_document_fragment.c:1:
+In file included from ./xml_document_fragment.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_document_fragment.c:17:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "1*", &document, &rest);
+                           ^
+2 warnings generated.
+compiling xml_dtd.c
+In file included from xml_dtd.c:1:
+In file included from ./xml_dtd.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_element_content.c
+In file included from xml_element_content.c:1:
+In file included from ./xml_element_content.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_element_decl.c
+In file included from xml_element_decl.c:1:
+In file included from ./xml_element_decl.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_encoding_handler.c
+In file included from xml_encoding_handler.c:1:
+In file included from ./xml_encoding_handler.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_entity_decl.c
+In file included from xml_entity_decl.c:1:
+In file included from ./xml_entity_decl.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_entity_reference.c
+In file included from xml_entity_reference.c:1:
+In file included from ./xml_entity_reference.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_entity_reference.c:18:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "2*", &document, &name, &rest);
+                           ^
+2 warnings generated.
+compiling xml_io.c
+In file included from xml_io.c:1:
+In file included from ./xml_io.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_io.c:20:22: warning: incompatible pointer types passing 'VALUE (VALUE *)' (aka 'unsigned long (unsigned long *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+  string = rb_rescue(read_check, (VALUE)args, read_failed, 0);
+                     ^~~~~~~~~~
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:1987:24: note: passing argument to parameter here
+VALUE rb_rescue(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE);
+                       ^
+xml_io.c:20:47: warning: incompatible pointer types passing 'VALUE (void)' (aka 'unsigned long (void)') to parameter of type 'VALUE (*)(VALUE, VALUE)' (aka 'unsigned long (*)(unsigned long, unsigned long)') [-Wincompatible-pointer-types]
+  string = rb_rescue(read_check, (VALUE)args, read_failed, 0);
+                                              ^~~~~~~~~~~
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:1987:46: note: passing argument to parameter here
+VALUE rb_rescue(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE);
+                                             ^
+xml_io.c:46:20: warning: incompatible pointer types passing 'VALUE (VALUE *)' (aka 'unsigned long (unsigned long *)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+  size = rb_rescue(write_check, (VALUE)args, write_failed, 0);
+                   ^~~~~~~~~~~
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:1987:24: note: passing argument to parameter here
+VALUE rb_rescue(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE);
+                       ^
+xml_io.c:46:46: warning: incompatible pointer types passing 'VALUE (void)' (aka 'unsigned long (void)') to parameter of type 'VALUE (*)(VALUE, VALUE)' (aka 'unsigned long (*)(unsigned long, unsigned long)') [-Wincompatible-pointer-types]
+  size = rb_rescue(write_check, (VALUE)args, write_failed, 0);
+                                             ^~~~~~~~~~~~
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:1987:46: note: passing argument to parameter here
+VALUE rb_rescue(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE);
+                                             ^
+5 warnings generated.
+compiling xml_libxml2_hacks.c
+compiling xml_namespace.c
+In file included from xml_namespace.c:1:
+In file included from ./xml_namespace.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_namespace.c:17:24: warning: cast from 'const unsigned char *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+    xmlFree((xmlChar *)ns->href);
+                       ^
+xml_namespace.c:20:24: warning: cast from 'const unsigned char *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+    xmlFree((xmlChar *)ns->prefix);
+                       ^
+xml_namespace.c:67:49: warning: incompatible pointer types passing 'struct _xmlNs *' to parameter of type 'xmlNodePtr' (aka 'struct _xmlNode *') [-Wincompatible-pointer-types]
+  return (node->next && ! Nokogiri_namespace_eh(node->next));
+                                                ^~~~~~~~~~
+xml_namespace.c:27:38: note: passing argument to parameter 'node' here
+int Nokogiri_namespace_eh(xmlNodePtr node)
+                                     ^
+4 warnings generated.
+compiling xml_node.c
+In file included from xml_node.c:1:
+In file included from ./xml_node.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_node.c:170:15: warning: 14 enumeration values not handled in switch: 'XML_ATTRIBUTE_NODE', 'XML_ENTITY_NODE', 'XML_DOCUMENT_NODE'... [-Wswitch]
+      switch (reparentee->type) {
+              ^
+xml_node.c:170:15: note: add missing switch cases
+      switch (reparentee->type) {
+              ^
+xml_node.c:188:15: warning: 15 enumeration values not handled in switch: 'XML_ATTRIBUTE_NODE', 'XML_ENTITY_NODE', 'XML_DOCUMENT_NODE'... [-Wswitch]
+      switch (reparentee->type) {
+              ^
+xml_node.c:188:15: note: add missing switch cases
+      switch (reparentee->type) {
+              ^
+xml_node.c:199:15: warning: 19 enumeration values not handled in switch: 'XML_ELEMENT_NODE', 'XML_ATTRIBUTE_NODE', 'XML_CDATA_SECTION_NODE'... [-Wswitch]
+      switch (reparentee->type) {
+              ^
+xml_node.c:199:15: note: add missing switch cases
+      switch (reparentee->type) {
+              ^
+xml_node.c:167:13: warning: 14 enumeration values not handled in switch: 'XML_CDATA_SECTION_NODE', 'XML_ENTITY_NODE', 'XML_PI_NODE'... [-Wswitch]
+    switch (parent->type) {
+            ^
+xml_node.c:167:13: note: add missing switch cases
+    switch (parent->type) {
+            ^
+xml_node.c:501:31: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  if(rb_scan_args(argc, argv, "01", &level) == 0)
+                              ^
+xml_node.c:847:22: warning: cast from 'const unsigned char *' to 'unsigned char *' drops const qualifier [-Wcast-qual]
+  colon = (xmlChar *)xmlStrchr(attribute, (const xmlChar)':');
+                     ^
+xml_node.c:865:19: warning: cast from 'const unsigned char *' to 'void *' drops const qualifier [-Wcast-qual]
+  xmlFree((void *)attribute);
+                  ^
+xml_node.c:869:19: warning: cast from 'const unsigned char *' to 'void *' drops const qualifier [-Wcast-qual]
+  xmlFree((void *)value);
+                  ^
+xml_node.c:1327:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "2*", &name, &document, &rest);
+                           ^
+10 warnings generated.
+compiling xml_node_set.c
+In file included from xml_node_set.c:1:
+In file included from ./xml_node_set.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_node_set.c:293:30: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+    rb_scan_args(argc, argv, "11", NULL, NULL);
+                             ^
+xml_node_set.c:478:3: warning: incompatible pointer types passing 'VALUE (VALUE, VALUE)' (aka 'unsigned long (unsigned long, unsigned long)') to parameter of type 'VALUE (*)(VALUE)' (aka 'unsigned long (*)(unsigned long)') [-Wincompatible-pointer-types]
+  rb_define_method(klass, "to_a", to_array, 0);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2799:117: note: expanded from macro 'rb_define_method'
+#define rb_define_method(klass, mid, func, arity) rb_define_method_choose_prototypem3((arity),(func))((klass),(mid),(func),(arity));
+                                                                                                                    ^~~~~~
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2775:1: note: passing argument to parameter 'func' here
+RB_METHOD_DEFINITION_DECL(rb_define_method, (2,3), (VALUE klass, const char *name), (klass, name))
+^
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/intern.h:1073:42: note: expanded from macro 'RB_METHOD_DEFINITION_DECL'
+RB_METHOD_DEFINITION_DECL_CXX_BEGIN(def) \
+                                         ^
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/intern.h:1069:5: note: expanded from macro '\
+RB_METHOD_DEFINITION_DECL_1'
+    RB_METHOD_DEFINITION_DECL_C(def,nonnull,defname,decl,vars,funcargs) \
+    ^
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/intern.h:1042:118: note: expanded from macro 'RB_METHOD_DEFINITION_DECL_C'
+    __attribute__((__unused__,__weakref__(#def),__nonnull__ nonnull))static void defname(RB_UNWRAP_MACRO decl,VALUE(*func)funcargs,int arity);
+                                                                                                                     ^
+3 warnings generated.
+compiling xml_processing_instruction.c
+In file included from xml_processing_instruction.c:1:
+In file included from ./xml_processing_instruction.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_processing_instruction.c:20:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "3*", &document, &name, &content, &rest);
+                           ^
+2 warnings generated.
+compiling xml_reader.c
+In file included from xml_reader.c:1:
+In file included from ./xml_reader.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_reader.c:533:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "13", &rb_buffer, &rb_url, &encoding, &rb_options);
+                           ^
+xml_reader.c:577:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "13", &rb_io, &rb_url, &encoding, &rb_options);
+                           ^
+3 warnings generated.
+compiling xml_relax_ng.c
+In file included from xml_relax_ng.c:1:
+In file included from ./xml_relax_ng.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_sax_parser.c
+In file included from xml_sax_parser.c:1:
+In file included from ./xml_sax_parser.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_sax_parser_context.c
+In file included from xml_sax_parser_context.c:1:
+In file included from ./xml_sax_parser_context.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_sax_push_parser.c
+In file included from xml_sax_push_parser.c:1:
+In file included from ./xml_sax_push_parser.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_schema.c
+In file included from xml_schema.c:1:
+In file included from ./xml_schema.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_syntax_error.c
+In file included from xml_syntax_error.c:1:
+In file included from ./xml_syntax_error.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+1 warning generated.
+compiling xml_text.c
+In file included from xml_text.c:1:
+In file included from ./xml_text.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_text.c:18:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "2*", &string, &document, &rest);
+                           ^
+2 warnings generated.
+compiling xml_xpath_context.c
+In file included from xml_xpath_context.c:1:
+In file included from ./xml_xpath_context.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xml_xpath_context.c:200:31: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  if(rb_scan_args(argc, argv, "11", &search_path, &xpath_handler) == 1)
+                              ^
+2 warnings generated.
+compiling xslt_stylesheet.c
+In file included from xslt_stylesheet.c:1:
+In file included from ./xslt_stylesheet.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby.h:33:
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:2592:41: warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+        memcpy(ptr, argv, sizeof(VALUE)*argc);
+                                       ~^~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:63:33: note: expanded from macro 'memcpy'
+                __builtin___memcpy_chk (dest, __VA_ARGS__, __darwin_obsz0 (dest))
+                                              ^~~~~~~~~~~
+xslt_stylesheet.c:141:30: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+    rb_scan_args(argc, argv, "11", &xmldoc, &paramobj);
+                             ^
+xslt_stylesheet.c:217:21: warning: incompatible pointer to integer conversion passing 'void *' to parameter of type 'VALUE' (aka 'unsigned long') [-Wint-conversion]
+    Data_Get_Struct(ctxt->style->_private, nokogiriXsltStylesheetTuple,
+                    ^~~~~~~~~~~~~~~~~~~~~
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:1250:41: note: expanded from macro 'Data_Get_Struct'
+    ((sval) = (type*)rb_data_object_get(obj))
+                                        ^~~
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:1423:26: note: passing argument to parameter 'obj' here
+rb_data_object_get(VALUE obj)
+                         ^
+xslt_stylesheet.c:230:21: warning: incompatible pointer to integer conversion passing 'void *' to parameter of type 'VALUE' (aka 'unsigned long') [-Wint-conversion]
+    Data_Get_Struct(ctxt->style->_private, nokogiriXsltStylesheetTuple,
+                    ^~~~~~~~~~~~~~~~~~~~~
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:1250:41: note: expanded from macro 'Data_Get_Struct'
+    ((sval) = (type*)rb_data_object_get(obj))
+                                        ^~~
+/Users/joetorres/.rvm/rubies/ruby-2.7.2/include/ruby-2.7.0/ruby/ruby.h:1423:26: note: passing argument to parameter 'obj' here
+rb_data_object_get(VALUE obj)
+                         ^
+4 warnings generated.
+linking shared-object nokogiri/nokogiri.bundle
+Cleaning files only used during build.
+rm -rf /Users/joetorres/Desktop/hof/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-apple-darwin20.4.0/ports
+rm -rf /Users/joetorres/Desktop/hof/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.2/ports
+
+current directory: /Users/joetorres/Desktop/hof/vendor/bundle/ruby/2.7.0/gems/nokogiri-1.8.2/ext/nokogiri
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 nokogiri.bundle ./.gem.20210429-53923-18hm0bx/nokogiri
