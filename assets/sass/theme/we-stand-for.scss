@@ -6,9 +6,13 @@
     background-blend-mode: multiply;
     background-size: cover;
 
-    // Medium Screen Implementation (768 - 991)
+    // Medium Screen Implementation (iPad, 768 - 991)
     @include screen-md{
         height: 60vh;
+    }
+    // Extra Small Screen Implementation (iPhone X, 768 max)
+    @include screen-xs{
+        height: 35vh;
     }
 
     .bodybox1{
@@ -19,12 +23,16 @@
             color: white;
             font-size: 4.4rem;
             font-family: 'AmericanPurpose', Arial, Sans-Serif;
-            letter-spacing: 2%;
             text-transform: uppercase;
             line-height: normal;
 
+            // Medium Screen Implementation (iPad, 768 - 991)
             @include screen-md {
                 font-size: 2.8rem;
+            }
+            // Extra Small Screen Implementation (iPhone X, 768 max)
+            @include screen-xs{
+                font-size: 1.5rem;
             }
         }
         
@@ -47,9 +55,21 @@
             border: none;
             border-radius: 7px;
             display: inline-block; 
+                        
+            // Medium Screen Implementation (iPad, 768 - 991)
             @include screen-tablet-max{
                 width: 30vh;
+            }    
+            // Extra Small Screen Implementation (iPhone X, 768 max)
+            @include screen-xs{
+                width: 12.5vh;
+                height: 3.75vh;
+                font-size: 0.5rem;
+                letter-spacing: 0.5px;
+                line-height: 125%;
             }
             }
         }
-    }
+}
+
+// All other mixins adjust correctly and fit to size without declaration
