@@ -1,20 +1,25 @@
+//All fit to Macbook Pro 16" screen unless specified by mixins
+
 #about-mainpage{
-    height: 50 vh;
+    // height: 50vh;
     position: relative;
 
+    // Large Screen Implementation (1024^)
+    @include screen-lg{
+        height: 64vh;
+    }
     // Medium Screen Implementation (768 - 991)
     @include screen-md{
-        height: 30vh;
+        height: 40vh;
     }
 
         
     h1{
-        // Normal Implementation
         position: absolute;
         transform: rotate(270deg);
-        margin-left: 17%;
-        margin-top: 11%;
-        font-size: 4.5rem;
+        margin-left: 16%;
+        margin-top: 10%;
+        font-size: 5.5rem;
         font-family: 'AmericanPurpose';
         color: black;
         text-transform: uppercase;
@@ -35,10 +40,9 @@
     
 
     .paragraphs{
-        // Normal Implementation
         width: 29.5%;
         margin-left: 25%;
-        margin-top: 5%;
+        margin-top: 4%;
         position: absolute;
 
         // Medium Screen Implementation (768 - 991)
@@ -52,12 +56,10 @@
         }
 
         p{
-            // Normal Implementation
             color: black;
             text-align: justify;
-            text-justify: inter-word;
-            font-size: 140%;
-            line-height: 1.3;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
             font-family: 'Open Sans';
 
             // Medium Screen Implementation (768 - 991)
@@ -69,16 +71,19 @@
             }
 
             // Large Screen Implementation (992 - 1200)
-            @include screen-lg {
-                font-size: 1rem;
+            @include screen-lg{
+                font-size: 0.75rem;
                 line-height: 1;
             }
-            
+
+            a{
+                color: rgb(192, 40, 44);
+                font-weight: bold;
+            }
         }
 
         br{
-            // Normal Implementation
-            line-height: 10%;
+            line-height: 7.5%;
 
             // Medium Screen Implementation (768 - 991)
             @include screen-md {
@@ -87,53 +92,11 @@
         }
     }
     
-        
-    button{
-        // Normal Implementation
-        margin-left: 38%;
-        margin-top: 5%;
-        position: absolute;
-        margin-left: 26%;
-        margin-top: 22.5%;
-        font-family: 'Open Sans';
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        height: 5.5vh;
-        width: 27vh;
-        background-color: rgb(192, 40, 44);
-        border: none;
-        border-radius: 7px;
-        display: inline-block; 
-
-        // Medium Screen Implementation (768 - 991)
-        @include screen-md {
-            font-size: 0.6rem;
-            margin-left: 25.5%;
-            margin-top: 24.5%;
-            height: 3.5vh;
-            width: 15vh;
-        }
-
-        // Large Screen Implementation (992 - 1200)
-        @include screen-lg {
-            font-size: 1rem;
-            margin-left: 27%;
-            margin-top: 24.5%;
-            height: 3.5vh;
-            width: 14vh;
-        }
-    }
-
-    
     img{
         // Normal Implementation
         margin-left: 57.5%;
         margin-top: 4%;
-        width: 33.5%;
+        width: 30%;
         padding-bottom: 2%;
 
         // Medium Screen Implementation (768 - 991)

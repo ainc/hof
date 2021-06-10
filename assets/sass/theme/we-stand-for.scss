@@ -1,3 +1,6 @@
+//All fit to Macbook Pro 16" screen unless specified by mixins
+//If mixin size is not listed, the implementation of the base code is acceptable for the size
+
 #what-we-stand-for {
     height: 90vh;
     background-image: url('/img/hero-bg.png');
@@ -44,11 +47,12 @@
             margin-top: 5%;
              // Button code
             font-family: 'Open Sans';
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: bold;
             color: white;
             text-align: center;
             letter-spacing: 1px;
+            line-height: 125%;
             height: 5.5vh;
             width: 27vh;
             background-color: rgb(192, 40, 44);
@@ -57,7 +61,7 @@
             display: inline-block; 
                         
             // Medium Screen Implementation (iPad, 768 - 991)
-            @include screen-tablet-max{
+            @include screen-md{
                 width: 30vh;
             }    
             // Extra Small Screen Implementation (iPhone X, 768 max)
@@ -68,8 +72,6 @@
                 letter-spacing: 0.5px;
                 line-height: 125%;
             }
-            }
         }
+    }
 }
-
-// All other mixins adjust correctly and fit to size without declaration
