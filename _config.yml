@@ -9,3 +9,4 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
 exclude: [node_modules]
+exclude: [vendor]
