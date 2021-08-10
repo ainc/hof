@@ -310,6 +310,7 @@ header .top-alert a {
 .inductees li a img {
   display: block;
   position: relative;
+  max-width: 200px;
 }
 .inductees li a {
   overflow: hidden;
@@ -502,7 +503,8 @@ div.bio-pic img {
   background: #fff;
   padding: 8px;
   position: relative;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3)
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  max-width: 200px;
 }
 
 div.bio-title, div.bio, div.back {
@@ -1309,7 +1311,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .book h3 {
   margin: 10px 20px;
 }
-.book li, p {
+.book li, .book p {
   margin-left: 20px;
 }
 .book a {
