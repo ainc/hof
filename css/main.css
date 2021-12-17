@@ -1331,3 +1331,15 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .rewards h5 {
   margin: 16px;
 }
+
+
+/* Promo banner */
+header .alert {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 5px;
+}
+header .close {
+  top: 50%;
+  transform: translateY(20%);
+}
