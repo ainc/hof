@@ -285,6 +285,15 @@ header .top-alert a {
   border-bottom: 1px solid #D11919;*/
 }
 
+header > .container > #nav  ul.dropdown-menu > li a {
+  color: black !important;
+}
+
+header .dropdown-menu li>a:hover {
+  background-color: #bbb;
+  background-image: linear-gradient(to bottom, #bbb, #bbb);
+}
+
 /* ===============================================
   HOMEPAGE
    ============================================= */
@@ -1343,3 +1352,4 @@ header .close {
   top: 50%;
   transform: translateY(20%);
 }
+
