@@ -4,6 +4,8 @@ var lastFiltered, initFilter = false;
 
 $(function(){
 
+	$('.2020-tip').tooltip();
+
 	$(document).on('pjax:send', function(){
 		toggleContentOpacity();
 	});

@@ -5,7 +5,12 @@
    Website: www.trippoinc.com;
    ========================================================================== */
 
-
+div.tooltip-inner {
+  line-height: 1.1rem;
+  font-size: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 
 
 /* ===============================================
