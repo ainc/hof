@@ -1,6 +1,34 @@
 
 [
    {
+      "company":"NTS Development Company",
+      "pic_name":"jd_nichols",
+      "display_name":"J.D. Nichols",
+      "abbreviated_name":"jd-nichols",
+      "year_class":"twenty-twenty-two"
+   },
+   {
+      "company":"Live Oak Bancshares",
+      "pic_name":"chip_mahan",
+      "display_name":"James S. 'Chip' Mahan",
+      "abbreviated_name":"chip-mahan",
+      "year_class":"twenty-twenty-two"
+   },
+   {
+      "company":"MCM CPA and Advisors",
+      "pic_name":"michael_mountjoy",
+      "display_name":"Michael B. Mounjoy",
+      "abbreviated_name":"michael-mountjoy",
+      "year_class":"twenty-twenty-two"
+   },
+   {
+      "company":"Gray Construction",
+      "pic_name":"lois_gray",
+      "display_name":"Lois Haward Gray",
+      "abbreviated_name":"lois-gray",
+      "year_class":"twenty-twenty-two"
+   },
+   {
       "company":"Trilogy Health Services",
       "pic_name":"randall-bufford",
       "display_name":"Randall Bufford",
