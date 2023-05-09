@@ -223,9 +223,9 @@ header > .container > #nav > ul > li:hover, header > .container > #nav > ul > li
 header > .container > #nav > ul > li a {
   color: white !important;
   display: block;
-  font-size: 21px;
+  font-size: 18px;
   font-family: Times New Roman, Times, Serif;
-  padding: 15px 20px;
+  padding: 15px 15px;
   text-decoration: none;
   border-bottom: none;
 }
