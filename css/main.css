@@ -1380,8 +1380,8 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
     color: #af0a0a
    }
    .induction-title {
-    color: #af0a0a !important;
-    font-weight: 700 !important;
+    color: #af0a0a;
+    font-weight: 700;
     
   }
 
@@ -1402,6 +1402,13 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
     font-size: x-large;
     font-weight: 700;
     padding: 1% 2%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #registerButton {
+      font-size: large;
+      padding: 1% 5%;
+    }
   }
   
   /* .rewards h5 {
