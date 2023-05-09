@@ -122,8 +122,8 @@ header > .container {
 
 header > .container > .logo {
   float: left;
-  width: 150px;
-  margin: -20px 0 5px;
+  width: 80px;
+  margin: 5px 0 5px;
 }
 
 header > .container > .logo a {
