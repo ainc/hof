@@ -48,6 +48,7 @@ function pageLoad(fullRefresh){
 		$('#galleryEE').imagesLoaded(function(){
 			initGalleryEE();
 		});
+		initPhotosAbout();
 	}
 
 	if (isFoundersSeries(file)){
@@ -112,10 +113,20 @@ function initGallery(){
 	  layoutMode : 'fitRows'
 	});
 
+	//default filter when page loads 2022
+	$inductees.isotope({ filter: ".twenty-twenty-two" });
+	$('#filters a[data-filter=".twenty-twenty-two"]').css({"color": "#af0a09", "font-size": "26px"});
+
 	$('#filters a').on("click", function(){
 	  var selector = $(this).attr('data-filter');
 		console.log(selector);
 	  $inductees.isotope({ filter: selector });
+
+	  //set all other filters to inactive
+	  $('#filters a').css({"color": "#666", "font-size": "18px"});
+
+      //set selected filter to active
+	  $(this).css({"color": "#af0a09", "font-size": "26px"});
 	  return false;
 	});
 
@@ -144,6 +155,9 @@ function initGalleryEE(){
 	  layoutMode : 'fitRows'
 	});
 
+	//default filter when page loads
+	$inducteesEE.isotope({ filter: ".twenty-twenty-two-ee" });
+	$('#filtersEE a[data-filter=".twenty-twenty-two-ee"]').css({"color": "#af0a09", "font-size": "26px"});
 
 	//filters on click
 	$('#filtersEE a').click(function(){
@@ -157,6 +171,12 @@ function initGalleryEE(){
 		else{
 			$inducteesEE.isotope({ filter: selector });
 		}
+
+		//set all other filters to inactive
+		$('#filtersEE a').css({"color": "#666", "font-size": "18px"});
+
+		//set selected filter to active
+		$(this).css({"color": "#af0a09", "font-size": "26px"});
 
 		//test scroll for jquery
 		//seems to not work due to jQuery isotope plugin
