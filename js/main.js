@@ -58,7 +58,7 @@ function pageLoad(fullRefresh){
 	}
 
 	if (isAbout(file)){
-		initPhotosAbout();
+		// initPhotosAbout();
 	}
 
 	if (isMedia(file)){
@@ -260,37 +260,37 @@ jQuery(function($){
 
 // FLICKR PLUGIN
 
-function initPhotosAbout(){
+// function initPhotosAbout(){
 
-	$.getJSON("http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=be58a8e94257fd0384521f22e4759fcb&user_id=40598240@N02&photoset_id=72157632009763509&per_page=6&format=json&jsoncallback=?", function(data){
-		console.log(this);
-			var list = $("<ul></ul>");
-	        $.each(data.photoset.photo, function(i,photo){
-		        var img_src = "http://farm" + photo.farm + ".static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "q.jpg";
-		        var a_href = "http://farm" + photo.farm + ".static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "b.jpg";
-		         var img = ("<a rel='shadowbox[Hall of Fame]' href='"+a_href+"'><img src='" + img_src + "'/></a>");
-		        var li = $("<li/>").append(img);
-		        $(list).append(li);
-      		});
-      		$(".photos").append(list);
-      		Shadowbox.setup('.photos-about li a');
-    });
+// 	$.getJSON("http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=be58a8e94257fd0384521f22e4759fcb&user_id=40598240@N02&photoset_id=72157632009763509&per_page=6&format=json&jsoncallback=?", function(data){
+// 		console.log(this);
+// 			var list = $("<ul></ul>");
+// 	        $.each(data.photoset.photo, function(i,photo){
+// 		        var img_src = "http://farm" + photo.farm + ".static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "q.jpg";
+// 		        var a_href = "http://farm" + photo.farm + ".static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "b.jpg";
+// 		         var img = ("<a rel='shadowbox[Hall of Fame]' href='"+a_href+"'><img src='" + img_src + "'/></a>");
+// 		        var li = $("<li/>").append(img);
+// 		        $(list).append(li);
+//       		});
+//       		$(".photos").append(list);
+//       		Shadowbox.setup('.photos-about li a');
+//     });
 
-}
+// }
 
-function initPhotosMedia(){
+// function initPhotosMedia(){
 
-	$.getJSON("http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=be58a8e94257fd0384521f22e4759fcb&user_id=40598240@N02&photoset_id=72157632009763509&per_page=8&format=json&jsoncallback=?", function(data){
-			var list = $("<ul></ul>");
-	        $.each(data.photoset.photo, function(i,photo){
-		        var img_src = "http://farm" + photo.farm + ".static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "q.jpg";
-		        var a_href = "http://farm" + photo.farm + ".static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "b.jpg";
-		         var img = ("<a rel='shadowbox[Hall of Fame]' href='"+a_href+"'><img src='" + img_src + "'/></a>");
-		        var li = $("<li/>").append(img);
-		        $(list).append(li);
-      		});
-      		$(".photos").append(list);
-      		Shadowbox.setup('.photos-media li a');
-    });
+// 	$.getJSON("http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=be58a8e94257fd0384521f22e4759fcb&user_id=40598240@N02&photoset_id=72157632009763509&per_page=8&format=json&jsoncallback=?", function(data){
+// 			var list = $("<ul></ul>");
+// 	        $.each(data.photoset.photo, function(i,photo){
+// 		        var img_src = "http://farm" + photo.farm + ".static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "q.jpg";
+// 		        var a_href = "http://farm" + photo.farm + ".static.flickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_" + "b.jpg";
+// 		         var img = ("<a rel='shadowbox[Hall of Fame]' href='"+a_href+"'><img src='" + img_src + "'/></a>");
+// 		        var li = $("<li/>").append(img);
+// 		        $(list).append(li);
+//       		});
+//       		$(".photos").append(list);
+//       		Shadowbox.setup('.photos-media li a');
+//     });
 
-}
+// }
