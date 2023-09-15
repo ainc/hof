@@ -260,7 +260,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  github-pages (>= 228)
+  github-pages (>= 104)
 
 BUNDLED WITH
    2.1.4
