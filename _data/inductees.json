@@ -1,6 +1,27 @@
 
 [
    {
+      "company": "ISCO Industries, Inc.",
+      "pic_name": "jimmy_kirchdorfer",      
+      "display_name": "Jimmy Kirchdorfer",
+      "abbreviated_name": "jimmy-kirchdorfer",
+      "year_class": "twenty-twenty-three"
+   },
+   {
+      "company": "Kona Ice",
+      "pic_name": "tony_lamb",
+      "display_name": "Tony Lamb",
+      "abbreviated_name": "tony-lamb",
+      "year_class": "twenty-twenty-three"
+   },
+   {
+      "company": "Fabulous Furs",
+      "pic_name": "donna_salyers",
+      "display_name": "Donna Salyers",
+      "abbreviated_name": "donna-salyers",
+      "year_class": "twenty-twenty-three"
+   },
+   {
       "company":"NTS Development Company",
       "pic_name":"jd_nichols",
       "display_name":"J.D. Nichols",
