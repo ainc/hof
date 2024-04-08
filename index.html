@@ -96,7 +96,7 @@ homepage: true
     </ul>
     <select class="filter visible-phone">
         <option data-filter="*">All</option>
-        <option data-filter= ".twenty-twenty-three">2023</option>
+        <option data-filter= ".twenty-twenty-three" selected="selected">2023</option>
         <option data-filter= ".twenty-twenty-two">2022</option>
         <option data-filter= ".twenty-twenty-one">2021</option>
         <option data-filter=".twenty-nineteen">2019</option>
@@ -117,7 +117,6 @@ homepage: true
 </div>
 <div id="gallery"  class="row-fluid">
     <div class="span12">
-
         <ul id="inductees" class="da-thumbs inductees">
             {% for ind in site.data.inductees %}
             <li class="inductee {{ ind.year_class }}">
@@ -165,9 +164,9 @@ homepage: true
         <li><a href="#" data-filter=".twenty-eleven-ee">2011</a></li>
         <li><a href="#" data-filter=".twenty-ten-ee">2010</a></li>
     </ul>
-    <select class="filter visible-phone">
+    <select class="filterEE visible-phone">
         <option data-filter="*">All</option>
-        <option data-filter=".twenty-twenty-three-ee">2023</option>
+        <option data-filter=".twenty-twenty-three-ee" selected="selected">2023</option>
         <option data-filter=".twenty-twenty-two-ee">2022</option>
         <option data-filter=".twenty-twenty-one-ee">2021</option>
         <option data-filter=".twenty-twenty-ee">2020</option>

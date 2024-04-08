@@ -163,14 +163,8 @@ function initGalleryEE(){
 	$('#filtersEE a').click(function(){
 	  var selector = $(this).attr('data-filter');
 		console.log(selector);
+		$inducteesEE.isotope({ filter: selector });
 
-		if(initFilter === false){
-				initFilter = true;
-				$inducteesEE.isotope({ filter: selector });
-		}
-		else{
-			$inducteesEE.isotope({ filter: selector });
-		}
 
 		//set all other filters to inactive
 		$('#filtersEE a').css({"color": "#666", "font-size": "18px"});
@@ -185,13 +179,9 @@ function initGalleryEE(){
 	});
 
 
-	$('select.filterEE').change(function(){
-		$("select option:selected").each(function () {
-			var selector = $(this).attr('data-filter');
-			console.log(selector);
-			$inducteesEE.isotope({ filter: selector });
-			return false;
-		});
+	$('select.filterEE').change(function () {
+		var selector = $(this).find('option:selected').attr('data-filter');
+		$inducteesEE.isotope({ filter: selector });
 	});
 
 	// hoverdir

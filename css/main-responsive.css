@@ -167,6 +167,11 @@ html,body {
     width: 80px;
     margin-top: 8px;
   }
+  select.filterEE {
+    float: right;
+    width: 80px;
+    margin-top: 8px;
+  }
 
   section#sponsors {
     padding-bottom: 30px;
@@ -236,12 +241,13 @@ html,body {
 
   ul.da-thumbs {
     overflow: visible !important;
-    margin-left: 50px;
+    display: flex;
+    justify-content: center;
   }
 
 
   li.foundersVideo, li.bio-video {
-    width: 265px;
+    width: 350px;
     margin: auto;
   }
 
@@ -251,7 +257,7 @@ html,body {
 
   div.play {
     top: 85px;
-    left: 70px;
+    left: 100px;
   }
 
   footer .credits {
