@@ -18,7 +18,7 @@ html,body {
 
   li.foundersVideo {
     width: 430px;
-    margin: 20px;
+    margin: 10px;
   }
 
   div.bioColumn {
@@ -247,7 +247,7 @@ html,body {
 
 
   li.foundersVideo, li.bio-video {
-    width: 350px;
+    width: 100%;
     margin: auto;
   }
 
@@ -257,7 +257,7 @@ html,body {
 
   div.play {
     top: 85px;
-    left: 100px;
+    left: 30%;
   }
 
   footer .credits {
