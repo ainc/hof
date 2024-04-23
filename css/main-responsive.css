@@ -250,14 +250,20 @@ html,body {
     width: 100%;
     margin: auto;
   }
+  li.foundersVideo img,
+  li.bio-video img {
+    max-width: 100%;
+    height: auto; /* This property ensures that the image maintains its aspect ratio */
+  }
 
   li.foundersVideo h3 {
     font-size: 18px;
   }
 
   div.play {
-    top: 85px;
+    top: 60px;
     left: 30%;
+    text-align: center;
   }
 
   footer .credits {
